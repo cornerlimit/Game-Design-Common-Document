@@ -1,7 +1,8 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Gameplay功能模块总览 V3</title><style>:root{--bg:#0f1117;--sf:#181a20;--sf2:#1e2028;--bd:#2a2d38;--tx:#e4e4e7;--dim:#9ca3af;--ac:#6366f1;--al:#818cf8;--gn:#34d399;--yl:#fbbf24;--or:#f97316;--cy:#22d3ee}*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--tx);line-height:1.7}.hero{background:linear-gradient(135deg,#1e1b4b 0%,#0f1117 60%,#064e3b 100%);padding:50px 30px 40px;text-align:center;border-bottom:1px solid var(--bd)}.hero h1{font-size:2rem;font-weight:700;margin-bottom:10px;background:linear-gradient(90deg,var(--al),var(--cy));-webkit-background-clip:text;-webkit-text-fill-color:transparent}.hero p{color:var(--dim);font-size:.95rem;max-width:800px;margin:0 auto}.hero .meta{margin-top:14px;font-size:.82rem;color:#6b7280}.ct{max-width:1360px;margin:0 auto;padding:36px 28px 80px}.toc{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:24px 28px;margin-bottom:40px}.toc h2{font-size:1.1rem;margin-bottom:14px;color:var(--al)}.toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:6px 20px}.toc a{color:var(--dim);text-decoration:none;font-size:.88rem;padding:3px 0;display:flex;align-items:center;gap:6px}.toc a:hover{color:var(--al)}.toc .n{color:var(--ac);font-weight:600;min-width:26px}.legend{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:16px 24px;margin-bottom:40px;display:flex;flex-wrap:wrap;gap:20px;font-size:.83rem}.legend-i{display:flex;align-items:center;gap:6px}.legend-d{width:10px;height:10px;border-radius:3px}.note{background:rgba(99,102,241,.06);border-left:3px solid var(--ac);padding:12px 16px;border-radius:0 8px 8px 0;margin:0 0 36px;font-size:.84rem;color:var(--dim)}.sec{margin-bottom:48px}.sec-h{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--bd)}.sec-h .ic{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}.sec-h h2{font-size:1.3rem;font-weight:700}.badge{font-size:.7rem;padding:2px 9px;border-radius:18px;font-weight:600}.b-i{background:rgba(99,102,241,.15);color:var(--al)}.b-c{background:rgba(251,191,36,.15);color:var(--yl)}.b-m{background:rgba(52,211,153,.15);color:var(--gn)}.sec-intro{color:var(--dim);font-size:.9rem;margin-bottom:16px}.sm{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:20px 24px;margin-bottom:14px}.sm:hover{border-color:#3b3f50}.sm-t{font-size:1rem;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:8px}.tt{font-size:.66rem;padding:2px 7px;border-radius:4px;font-weight:600}.t-i{background:rgba(99,102,241,.12);color:var(--al)}.t-c{background:rgba(251,191,36,.12);color:var(--yl)}.t-m{background:rgba(52,211,153,.12);color:var(--gn)}.sm-d{color:var(--dim);font-size:.86rem;margin-bottom:10px}.dec{background:rgba(34,211,238,.05);border-left:3px solid var(--cy);padding:10px 14px;border-radius:0 7px 7px 0;margin-bottom:10px;font-size:.84rem;color:var(--cy)}.nt{background:rgba(249,115,22,.05);border-left:3px solid var(--or);padding:10px 14px;border-radius:0 7px 7px 0;margin-bottom:12px;font-size:.84rem;color:var(--or)}.dg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}@media(max-width:768px){.dg{grid-template-columns:1fr}}.db{background:var(--sf2);border-radius:7px;padding:10px 14px;font-size:.8rem}.db .lb{font-weight:600;margin-bottom:4px;display:flex;align-items:center;gap:5px}.lb.p{color:var(--or)}.lb.r{color:var(--cy)}.db ul{list-style:none;padding:0;color:var(--dim)}.db li::before{content:"\00b7  ";color:#555}.ot{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:4px}.ot th{background:var(--sf2);text-align:left;padding:7px 10px;font-weight:600;color:var(--dim);border-bottom:1px solid var(--bd)}.ot td{padding:7px 10px;border-bottom:1px solid #222430;color:var(--dim);vertical-align:top}.ot tr:last-child td{border-bottom:none}.sec[id]{scroll-margin-top:20px}.legend-v3{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:24px 28px;margin-bottom:30px}.legend-v3 h3{font-size:1rem;margin-bottom:16px;color:var(--al)}.lg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}.lg-card{background:var(--sf2);border-radius:8px;padding:14px 16px}.lg-head{display:flex;align-items:center;gap:8px;font-size:.88rem;margin-bottom:8px}.lg-body{font-size:.82rem;color:var(--dim);line-height:1.6}</style></head>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Gameplay功能模块总览 V3</title><style>:root{--bg:#0f1117;--sf:#181a20;--sf2:#1e2028;--bd:#2a2d38;--tx:#e4e4e7;--dim:#9ca3af;--ac:#6366f1;--al:#818cf8;--gn:#34d399;--yl:#fbbf24;--or:#f97316;--cy:#22d3ee}*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--tx);line-height:1.7}.hero{background:linear-gradient(135deg,#1e1b4b 0%,#0f1117 60%,#064e3b 100%);padding:50px 30px 40px;text-align:center;border-bottom:1px solid var(--bd)}.hero h1{font-size:2rem;font-weight:700;margin-bottom:10px;background:linear-gradient(90deg,var(--al),var(--cy));-webkit-background-clip:text;-webkit-text-fill-color:transparent}.hero p{color:var(--dim);font-size:.95rem;max-width:800px;margin:0 auto}.hero .meta{margin-top:14px;font-size:.82rem;color:#6b7280}.ct{max-width:1360px;margin:0 auto;padding:36px 28px 80px}.toc{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:24px 28px;margin-bottom:40px}.toc h2{font-size:1.1rem;margin-bottom:14px;color:var(--al)}.toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:6px 20px}.toc a{color:var(--dim);text-decoration:none;font-size:.88rem;padding:3px 0;display:flex;align-items:center;gap:6px}.toc a:hover{color:var(--al)}.toc .n{color:var(--ac);font-weight:600;min-width:26px}.legend{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:16px 24px;margin-bottom:40px;display:flex;flex-wrap:wrap;gap:20px;font-size:.83rem}.legend-i{display:flex;align-items:center;gap:6px}.legend-d{width:10px;height:10px;border-radius:3px}.note{background:rgba(99,102,241,.06);border-left:3px solid var(--ac);padding:12px 16px;border-radius:0 8px 8px 0;margin:0 0 36px;font-size:.84rem;color:var(--dim)}.sec{margin-bottom:48px}.sec-h{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--bd)}.sec-h .ic{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}.sec-h h2{font-size:1.3rem;font-weight:700}.badge{font-size:.7rem;padding:2px 9px;border-radius:18px;font-weight:600}.b-i{background:rgba(99,102,241,.15);color:var(--al)}.b-c{background:rgba(251,191,36,.15);color:var(--yl)}.b-m{background:rgba(52,211,153,.15);color:var(--gn)}.sec-intro{color:var(--dim);font-size:.9rem;margin-bottom:16px}.sm{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:20px 24px;margin-bottom:14px}.sm:hover{border-color:#3b3f50}.sm-t{font-size:1rem;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:8px}.tt{font-size:.66rem;padding:2px 7px;border-radius:4px;font-weight:600}.t-i{background:rgba(99,102,241,.12);color:var(--al)}.t-c{background:rgba(251,191,36,.12);color:var(--yl)}.t-m{background:rgba(52,211,153,.12);color:var(--gn)}.sm-d{color:var(--dim);font-size:.86rem;margin-bottom:10px}.dec{background:rgba(34,211,238,.05);border-left:3px solid var(--cy);padding:10px 14px;border-radius:0 7px 7px 0;margin-bottom:10px;font-size:.84rem;color:var(--cy)}.nt{background:rgba(249,115,22,.05);border-left:3px solid var(--or);padding:10px 14px;border-radius:0 7px 7px 0;margin-bottom:12px;font-size:.84rem;color:var(--or)}.dg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}@media(max-width:768px){.dg{grid-template-columns:1fr}}.db{background:var(--sf2);border-radius:7px;padding:10px 14px;font-size:.8rem}.db .lb{font-weight:600;margin-bottom:4px;display:flex;align-items:center;gap:5px}.lb.p{color:var(--or)}.lb.r{color:var(--cy)}.db ul{list-style:none;padding:0;color:var(--dim)}.db li::before{content:"\00b7  ";color:#555}.ot{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:4px}.ot th{background:var(--sf2);text-align:left;padding:7px 10px;font-weight:600;color:var(--dim);border-bottom:1px solid var(--bd)}.ot td{padding:7px 10px;border-bottom:1px solid #222430;color:var(--dim);vertical-align:top}.ot tr:last-child td{border-bottom:none}.sec[id]{scroll-margin-top:20px}.legend-v3{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:24px 28px;margin-bottom:30px}.legend-v3 h3{font-size:1rem;margin-bottom:16px;color:var(--al)}.lg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}.lg-card{background:var(--sf2);border-radius:8px;padding:14px 16px}.lg-head{display:flex;align-items:center;gap:8px;font-size:.88rem;margin-bottom:8px}.lg-body{font-size:.82rem;color:var(--dim);line-height:1.6}.guide-btn{display:inline-block;margin-top:16px;padding:8px 24px;background:linear-gradient(90deg,var(--ac),#22d3ee);color:#fff;text-decoration:none;border-radius:8px;font-size:.9rem;font-weight:600;transition:opacity .2s}.guide-btn:hover{opacity:.85}</style></head>
 <body><div class="hero"><h1>开放世界动作冒险游戏 · Gameplay 功能模块总览</h1>
 <p>面向含多人组队开局玩法（GTA5式大厅→开放世界）的3D动作冒险项目。<br>本文档为<b>模块拆分总纲</b>，指导各功能策划撰写详细设计案，并明确对下游的交付要求。<br><b>每个子模块新增：策划决策要点 + 注意点与边界问题。</b></p>
-<div class="meta">参考作品：塞尔达·旷野之息/王国之泪 · GTA5 · 原神 · 对马岛之魂 &nbsp;|&nbsp; 15 大模块 / 67 子模块 &nbsp;|&nbsp; V3.0 &nbsp;|&nbsp; 2026-04-09</div></div>
+<div class="meta">参考作品：塞尔达·旷野之息/王国之泪 · GTA5 · 原神 · 对马岛之魂 &nbsp;|&nbsp; 16 大模块 / 73 子模块 &nbsp;|&nbsp; V3.0 &nbsp;|&nbsp; 2026-04-09</div>
+<a class="guide-btn" href="writing-guide.html" target="_blank">📝 策划文档撰写指南 →</a></div>
 <div class="ct">
 <div class="legend-v3">
 <h3>📌 术语说明</h3>
@@ -13,7 +14,7 @@
 <div class="lg-card"><div class="lg-head"><div class="legend-d" style="background:var(--cy)"></div>🔄 <b>关联模块</b></div><div class="lg-body">开发上不重复造轮子，而是使用相关模块已有的功能；或者本模块的功能开发，需要拓展相关模块的功能（配合开发）。</div></div>
 </div></div>
 <div class="note"><b>阅读说明：</b>每个子模块卡片包含六个维度——① 模块内容概述 ② <span style="color:var(--cy)">📋 策划需决策的要点</span> ③ <span style="color:var(--or)">⚠️ 注意点与边界问题</span> ④ 前置依赖 ⑤ 关联模块 ⑥ 下游交付需求与策划输入物。</div>
-<div class="toc"><h2>📑 模块总览目录（15 大模块 / 67 子模块）</h2><div class="toc-grid"><a href="#sec-3c"><span class="n">01</span>3C 系统（角色/相机/控制/属性/交互）</a><a href="#sec-combat"><span class="n">02</span>战斗系统</a><a href="#sec-item"><span class="n">03</span>物品系统（道具/装备/制作/掉落）</a><a href="#sec-ai"><span class="n">04</span>AI 系统</a><a href="#sec-physics"><span class="n">05</span>物理系统（拓展）</a><a href="#sec-vehicle"><span class="n">06</span>载具系统</a><a href="#sec-ui"><span class="n">07</span>UI / HUD / 引导</a><a href="#sec-base"><span class="n">08</span>基础系统（存档/拍照/设置）</a><a href="#sec-world"><span class="n">09</span>世界观与叙事</a><a href="#sec-level"><span class="n">10</span>关卡系统（地图/天气/过场）</a><a href="#sec-mission"><span class="n">11</span>任务与对话系统</a><a href="#sec-achieve"><span class="n">12</span>成就/收集系统</a><a href="#sec-economy"><span class="n">13</span>经济系统</a><a href="#sec-social"><span class="n">14</span>社交系统（多人/组队/聊天/排行榜）</a><a href="#sec-audio"><span class="n">15</span>音频系统</a></div></div>
+<div class="toc"><h2>📑 模块总览目录（16 大模块 / 73 子模块）</h2><div class="toc-grid"><a href="#sec-3c"><span class="n">01</span>3C 系统（角色/相机/控制/属性/交互）</a><a href="#sec-combat"><span class="n">02</span>战斗系统</a><a href="#sec-interact"><span class="n">03</span>交互系统</a><a href="#sec-item"><span class="n">04</span>物品系统（道具/装备/制作/掉落）</a><a href="#sec-ai"><span class="n">05</span>AI 系统</a><a href="#sec-physics"><span class="n">06</span>物理系统（拓展）</a><a href="#sec-vehicle"><span class="n">07</span>载具系统</a><a href="#sec-ui"><span class="n">08</span>UI / HUD / 引导</a><a href="#sec-base"><span class="n">09</span>基础系统（存档/拍照/设置）</a><a href="#sec-world"><span class="n">10</span>世界观与叙事</a><a href="#sec-level"><span class="n">11</span>关卡系统（地图/天气/过场）</a><a href="#sec-mission"><span class="n">12</span>任务与对话系统</a><a href="#sec-achieve"><span class="n">13</span>成就/收集系统</a><a href="#sec-economy"><span class="n">14</span>经济系统</a><a href="#sec-social"><span class="n">15</span>社交系统（多人/组队/聊天/排行榜）</a><a href="#sec-audio"><span class="n">16</span>音频系统</a></div></div>
 <div class="sec" id="sec-3c"><div class="sec-h">
 <div class="ic" style="background:rgba(52,211,153,.15)">🎮</div>
 <h2>01 · 3C 系统（角色/相机/控制/属性/交互）</h2><span class="badge b-m">混合型</span></div>
@@ -79,14 +80,7 @@
 <div class="nt"><b>⚠️ 注意点与边界：</b>相机是体验的放大镜——手感好坏很大程度取决于相机调教；不同状态切换需平滑过渡；碰撞避让是长期调优项。</div>
 <div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>基础运动</li></ul></div>
 <div class="db"><div class="lb r">🔄 关联模块</div><ul><li>战斗系统</li><li>载具系统</li><li>过场演出</li><li>UI/HUD</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>相机管理器、各模式Camera Rig、碰撞避让</td><td>相机行为参数表；震动配置表</td></tr></table></div>
-<div class="sm"><div class="sm-t">通用交互框架 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>交互检测方式；交互类型分类（即时/长按/固定点/持续）；交互优先级；交互提示UI规范。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 交互检测方式——面前扇形 vs 屏幕中心射线 vs 最近距离优先；② 多交互物重叠时的优先级策略；③ 固定点交互是否需要角色自动走位对齐。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>交互系统是几乎所有Gameplay的底层入口，接口设计需足够通用可扩展；多人模式交互占用/竞争需提前考虑。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>UI框架</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>道具系统</li><li>对话系统</li><li>载具系统</li><li>机关系统</li><li>任务系统</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>交互管理器、检测组件、交互基类</td><td>交互类型规范文档；优先级规则</td></tr><tr><td>美术</td><td>交互提示UI素材、通用交互动画</td><td>交互动画需求表；UX设计稿</td></tr></table></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>相机管理器、各模式Camera Rig、碰撞避让</td><td>相机行为参数表；震动配置表</td></tr></table></div></div>
 
 <div class="sec" id="sec-combat"><div class="sec-h">
 <div class="ic" style="background:rgba(52,211,153,.15)">⚔️</div>
@@ -176,9 +170,62 @@
 <div class="db"><div class="lb r">🔄 关联模块</div><ul><li>关卡设计</li><li>物化反应</li><li>多人系统</li></ul></div></div>
 <table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>动态障碍组件库、Timeline编辑器</td><td>动态障碍类型清单</td></tr><tr><td>美术</td><td>障碍物模型/动画</td><td>障碍物资产清单</td></tr><tr><td>音频</td><td>障碍运行音效</td><td>音效需求表</td></tr></table></div></div>
 
+<div class="sec" id="sec-interact"><div class="sec-h">
+<div class="ic" style="background:rgba(52,211,153,.15)">🤝</div>
+<h2>03 · 交互系统</h2><span class="badge b-m">混合型</span></div>
+<p class="sec-intro">统一的交互检测与交互行为框架，以及各类交互行为实现（机关、采集、姿态、拾取、对话等）。同时定义交互物组件的标准分类。</p><div class="sm"><div class="sm-t">通用交互框架 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>交互检测方式（射线/范围/触发器）；交互类型分类（即时/长按/固定点/持续）；交互优先级；交互提示UI规范；交互物基类属性定义；网络同步需求。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 交互检测方式——面前扇形区域 vs 屏幕中心射线 vs 最近距离优先；② 多交互物重叠时的优先级策略（距离优先/类型优先/视角优先）；③ 固定点交互是否需要角色自动走位对齐（如拉杆、操作台）；④ 交互提示UI的统一规范（按键图标+文字描述的样式）。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>交互系统是几乎所有Gameplay的底层入口（拾取/对话/上车/开门/机关），接口设计需足够通用可扩展；多人模式下的交互占用/竞争需提前考虑（如宝箱只能一人开）；交互检测的性能开销在大量交互物场景中需要优化（空间哈希/八叉树）。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>UI框架</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>道具系统</li><li>对话系统</li><li>载具系统</li><li>任务系统</li><li>所有使用交互的模块</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>交互管理器、检测组件、交互基类、交互物编辑器标记工具</td><td>交互类型规范文档；交互优先级规则；交互提示UI规范</td></tr><tr><td>美术</td><td>交互提示UI素材</td><td>UX设计稿（交互提示样式）</td></tr></table></div>
+<div class="sm"><div class="sm-t">机关交互（开门/拉杆/开关等） <span class="tt t-c">Content</span></div>
+<div class="sm-d"><b>模块内容概述：</b>机关类交互的统一行为：开门（推/拉/旋转/滑动）、拉杆/按钮操作、阀门旋转、电梯召唤等；固定点交互设计（角色移动到固定位置执行固定动画）；机关状态切换（开/关/锁定/损坏）；机关联动逻辑（开关A控制门B）。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 机关交互是否需要角色播放特定动画（如双手推门）还是即时触发；② 机关是否有锁定状态（需要钥匙/解谜/条件满足才能操作）；③ 机关状态是否持久化（离开区域后是否重置）；④ 是否有可破坏的门/机关（与物理破坏系统联动）。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>机关交互的动画种类多（推门/拉杆/旋转/按压...），需要提前规划通用交互动画模板减少资产量；多人模式下机关状态同步需要确保一致性（A开了门，B也能看到门开了）。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>物理碰撞</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>关卡设计</li><li>物理破坏</li><li>任务系统</li><li>动画系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>机关交互组件、状态管理、联动逻辑系统</td><td>机关类型表（开门/拉杆/按钮等参数）；机关联动规则文档</td></tr><tr><td>美术</td><td>交互动画（推门/拉杆/按压等）、机关模型</td><td>交互动画需求表；机关资产清单</td></tr><tr><td>音频</td><td>开门声、拉杆声、机关运行声</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">姿态变化交互（坐/靠/躺） <span class="tt t-c">Content</span></div>
+<div class="sm-d"><b>模块内容概述：</b>角色在特定交互点执行姿态变化：坐下（椅子/地面/台阶）、靠（墙壁/栏杆）、躺（床/吊床/草地）；进入姿态的匹配逻辑（角色位置对齐、朝向调整）；姿态中的可执行操作（聊天/查看菜单/表情动作）；退出姿态的触发条件。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 姿态交互点是预设的（美术放置交互标记）还是智能检测的（自动检测可坐表面）；② 姿态中是否有特殊功能（如坐下后体力恢复加速、躺下后触发休息机制）；③ 多人模式下同一个座位是否有占用判定。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>姿态交互的IK匹配是技术难点——不同体型的角色坐同一把椅子需要适配；预设交互点方案工作量可控但灵活性低，智能检测方案灵活但开发成本高；建议优先做预设点方案。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>动画系统（IK）</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>角色系统</li><li>Buff系统（姿态带来的恢复效果）</li><li>多人系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>姿态交互组件、位置/朝向对齐逻辑、IK适配</td><td>姿态类型表（坐/靠/躺的参数）；姿态交互点放置规范</td></tr><tr><td>美术</td><td>各姿态动画（坐下/起身/靠墙/躺下等过渡动画+Idle循环）</td><td>动作资产需求表</td></tr><tr><td>音频</td><td>坐下/躺下的衣物摩擦声</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">采集交互（砍伐/采摘/挖矿/钓鱼） <span class="tt t-c">Content</span></div>
+<div class="sm-d"><b>模块内容概述：</b>各类资源采集行为：砍伐（树木/灌木）、采摘（草药/果实/花朵）、挖矿（矿石/宝石）、钓鱼（水边钓鱼迷你游戏）等；采集前置条件（是否需要工具如斧头/镐/鱼竿）；采集时间/进度；采集产出（与掉落系统关联）；采集资源的刷新机制。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 采集是否需要特定工具（增加装备管理维度但也增加门槛）；② 采集是简单播放动画+获取道具，还是有迷你游戏（如钓鱼的QTE/拉扯系统）；③ 采集资源的刷新机制——定时刷新 vs 离开区域刷新 vs 永不刷新；④ 采集是否可以被打断（被敌人攻击中断采集）。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>采集系统与经济平衡紧密相关——采集产出过多会导致资源贬值，过少会导致玩家枯燥刷采集；钓鱼类迷你游戏开发成本不低但玩家满意度通常很高——需评估ROI；采集点分布需和关卡组配合规划。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>道具/背包系统</li><li>掉落系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>经济系统</li><li>制作系统（采集物作为材料）</li><li>关卡设计（采集点分布）</li><li>UI（采集进度条）</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>采集交互组件、采集进度管理、资源刷新器、钓鱼迷你游戏（如有）</td><td>采集类型表（砍伐/采摘/挖矿/钓鱼的参数、时间、工具需求）；采集产出配置表</td></tr><tr><td>美术</td><td>各类采集动画（砍伐/采摘/挖矿/钓鱼）、资源物模型（树/矿/草药等不同状态）</td><td>采集动画需求表；资源物资产清单</td></tr><tr><td>音频</td><td>砍伐声、挖矿声、采摘声、钓鱼水声</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">拾取交互 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>场景中掉落物/道具的拾取行为：靠近自动拾取 vs 手动按键拾取；批量拾取/全部拾取；拾取动画（弯腰/吸附/直接入包）；拾取物的场景表现（光柱/高亮/浮动图标）；拾取过滤（自动忽略低品质物品）。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 拾取方式——纯自动拾取 vs 手动按键 vs 混合（低品质自动/高品质手动）；② 是否有拾取动画（有则更沉浸但节奏稍慢，无则效率高但缺少反馈）；③ 多人模式拾取归属——各自独立掉落 vs 谁先拾取归谁。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>拾取频率很高，交互响应必须即时——任何延迟都会被放大感知；自动拾取需要考虑背包满的处理逻辑；多人抢拾取是常见的社交冲突点。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>道具/背包系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>掉落系统</li><li>UI（拾取提示/拾取日志）</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>拾取交互组件、自动拾取逻辑、拾取过滤器</td><td>拾取规则文档（自动/手动/过滤条件）</td></tr><tr><td>美术</td><td>拾取动画（如有）、掉落物场景表现特效</td><td>特效需求表</td></tr><tr><td>音频</td><td>拾取音效（按品质分层）</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">对话交互 <span class="tt t-c">Content</span></div>
+<div class="sm-d"><b>模块内容概述：</b>与NPC的对话触发与进入流程：对话触发范围检测、对话进入/退出的角色行为（转向NPC/停止移动/镜头切换）；对话中的交互操作（选项选择/跳过/加速文字显示）。注意：对话内容逻辑（分支/条件/文本）属于任务与对话系统，此处仅涉及对话的交互入口和表现层。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 对话触发是靠近自动触发还是需要按键；② 进入对话时是否锁定角色操作（不能移动/不能攻击）；③ 对话中是否有镜头切换（拉近NPC面部/双人对话机位切换）；④ 多人模式下一个人对话时其他人是否可见/可参与。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>对话交互的体验很大程度取决于镜头和角色表现——仅弹文字框和有对话演出的体验天差地别；对话锁定操作在开放世界中需要考虑被敌人攻击的情况（是否自动中断对话）。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>相机系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>对话系统（内容逻辑）</li><li>NPC AI</li><li>任务系统</li><li>UI（对话界面）</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>对话交互组件、对话镜头控制、角色朝向/位置对齐</td><td>对话交互规范文档（触发条件/镜头行为/操作限制）</td></tr><tr><td>美术</td><td>对话特写镜头预设、NPC对话Idle动画</td><td>动画需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">交互物组件分类标准 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>定义场景中所有可交互物体的组件分类标准，确保各系统对交互物的创建和管理有统一规范。分类包括：资源类（可采集的树/矿/草药等）、机关类（门/拉杆/开关/电梯等）、陷阱类（地刺/火焰/绊线等可触发伤害的交互物）、掉落物类（场景中的可拾取道具/装备/货币）、NPC对话组件（NPC身上挂载的对话触发器，含头顶标记逻辑如感叹号/问号）。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 交互物组件是否基于同一个基类扩展（统一接口便于管理）还是各自独立（灵活但维护成本高）；② NPC头顶标记系统的规则——感叹号（有新任务）、问号（可提交任务）、其他标记（商人/功能NPC等）如何定义；③ 交互物是否有统一的编辑器标记方式（让关卡设计师能快速放置和配置）。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>交互物组件分类是前期架构决策——分类越清晰后期扩展越方便，建议建立交互物组件注册表；NPC头顶标记逻辑需要和任务系统紧密联动（任务状态变化→标记变化）；建议为关卡设计师提供交互物快速放置和预览工具。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>物理碰撞</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>掉落系统</li><li>采集系统</li><li>机关交互</li><li>陷阱系统</li><li>NPC AI</li><li>任务系统</li><li>关卡设计工具</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>交互物基类组件、各分类组件（资源/机关/陷阱/掉落物/NPC对话）、组件注册表、编辑器快速放置工具</td><td>交互物组件分类规范文档；各类交互物的属性模板；NPC头顶标记规则文档</td></tr><tr><td>美术</td><td>各类交互物通用视觉标识（高亮/轮廓/图标）、NPC头顶标记图标（感叹号/问号/商人等）</td><td>交互物视觉规范；标记图标资产清单</td></tr></table></div></div>
+
 <div class="sec" id="sec-item"><div class="sec-h">
 <div class="ic" style="background:rgba(251,191,36,.15)">🎒</div>
-<h2>03 · 物品系统（道具/装备/制作/掉落）</h2><span class="badge b-c">内容拓展</span></div>
+<h2>04 · 物品系统（道具/装备/制作/掉落）</h2><span class="badge b-c">内容拓展</span></div>
 <p class="sec-intro">管理所有可拥有物品、装备、制作配方，以及掉落产出配置。</p><div class="sm"><div class="sm-t">背包与道具管理 <span class="tt t-m">Mixed</span></div>
 <div class="sm-d"><b>模块内容概述：</b>道具数据结构；背包容量与分类；道具获取/消耗/丢弃；道具使用效果；稀有度体系。</div>
 <div class="dec"><b>📋 策划需决策：</b>① 背包是否有容量上限（格子数/重量）；② 稀有度等级数量；③ 是否有自动拾取和过滤。</div>
@@ -210,7 +257,7 @@
 
 <div class="sec" id="sec-ai"><div class="sec-h">
 <div class="ic" style="background:rgba(251,191,36,.15)">🤖</div>
-<h2>04 · AI 系统</h2><span class="badge b-c">内容拓展</span></div>
+<h2>05 · AI 系统</h2><span class="badge b-c">内容拓展</span></div>
 <p class="sec-intro">分基础层（通用框架）与应用层（各类AI行为），含阵营、同伴和AI生成器。</p><div class="sm"><div class="sm-t">AI基础框架 <span class="tt t-i">Infra</span></div>
 <div class="sm-d"><b>模块内容概述：</b>行为树架构与节点规划；感知系统（视觉/听觉/伤害感知）；Action Point/巡逻点；AI黑板；AI状态分层；多人仇恨/目标分配。</div>
 <div class="dec"><b>📋 策划需决策：</b>① 行为树方案——自研 vs UE内置 vs 第三方；② 感知是否区分视觉/听觉独立通道；③ AI黑板数据共享范围。</div>
@@ -263,7 +310,7 @@
 
 <div class="sec" id="sec-physics"><div class="sec-h">
 <div class="ic" style="background:rgba(99,102,241,.15)">🧊</div>
-<h2>05 · 物理系统（拓展）</h2><span class="badge b-i">底层机制</span></div>
+<h2>06 · 物理系统（拓展）</h2><span class="badge b-i">底层机制</span></div>
 <p class="sec-intro">引擎基础物理之上的拓展模块。</p><div class="sm"><div class="sm-t">基础碰撞与物理模拟 <span class="tt t-i">Infra</span></div>
 <div class="sm-d"><b>模块内容概述：</b>碰撞层级与通道规划；物理材质定义；刚体模拟；布娃娃触发与混合方案。</div>
 <div class="dec"><b>📋 策划需决策：</b>① 碰撞通道划分粒度；② 布娃娃是否用于死亡表现——纯Ragdoll还是动画→Ragdoll混合。</div>
@@ -288,7 +335,7 @@
 
 <div class="sec" id="sec-vehicle"><div class="sec-h">
 <div class="ic" style="background:rgba(52,211,153,.15)">🏎️</div>
-<h2>06 · 载具系统</h2><span class="badge b-m">混合型</span></div>
+<h2>07 · 载具系统</h2><span class="badge b-m">混合型</span></div>
 <p class="sec-intro">独立模块——涉及独立物理模拟、相机行为、操控手感。</p><div class="sm"><div class="sm-t">载具框架与通用逻辑 <span class="tt t-i">Infra</span></div>
 <div class="sm-d"><b>模块内容概述：</b>载具类型分类与操控差异；上下车交互与动画衔接；耐久/燃油机制；载具战斗；乘客系统；载具毁坏。</div>
 <div class="dec"><b>📋 策划需决策：</b>① 是否有耐久/燃油系统；② 载具上可否战斗（司机/乘客分工）；③ 载具毁坏后处理——消失/残骸/可修复。</div>
@@ -320,7 +367,7 @@
 
 <div class="sec" id="sec-ui"><div class="sec-h">
 <div class="ic" style="background:rgba(99,102,241,.15)">🖥️</div>
-<h2>07 · UI / HUD / 引导</h2><span class="badge b-i">底层机制</span></div>
+<h2>08 · UI / HUD / 引导</h2><span class="badge b-i">底层机制</span></div>
 <p class="sec-intro">所有面向玩家的界面层与新手引导。</p><div class="sm"><div class="sm-t">UI框架与HUD <span class="tt t-i">Infra</span></div>
 <div class="sm-d"><b>模块内容概述：</b>UI技术选型；HUD信息层级；菜单导航；动效规范；多分辨率适配；输入管理。策划需为每个界面提供UX设计稿。</div>
 <div class="dec"><b>📋 策划需决策：</b>① HUD信息密度——极简（旷野之息式）vs 信息丰富（MMO式）；② 是否支持HUD自定义；③ UI风格基调。</div>
@@ -338,7 +385,7 @@
 
 <div class="sec" id="sec-base"><div class="sec-h">
 <div class="ic" style="background:rgba(99,102,241,.15)">⚙️</div>
-<h2>08 · 基础系统（存档/拍照/设置）</h2><span class="badge b-i">底层机制</span></div>
+<h2>09 · 基础系统（存档/拍照/设置）</h2><span class="badge b-i">底层机制</span></div>
 <p class="sec-intro">通用基础设施模块。</p><div class="sm"><div class="sm-t">存档/进度系统 <span class="tt t-i">Infra</span></div>
 <div class="sm-d"><b>模块内容概述：</b>存档数据范围；存档方式（手动/自动/检查点）；存档槽位；数据格式与压缩；云同步；存档损坏恢复。</div>
 <div class="dec"><b>📋 策划需决策：</b>① 存档方式——手动存档 vs 自动存档 vs 检查点 vs 混合；② 存档槽位数量；③ 云存档在多人场景下的归属策略。</div>
@@ -363,7 +410,7 @@
 
 <div class="sec" id="sec-world"><div class="sec-h">
 <div class="ic" style="background:rgba(251,191,36,.15)">📖</div>
-<h2>09 · 世界观与叙事</h2><span class="badge b-c">内容拓展</span></div>
+<h2>10 · 世界观与叙事</h2><span class="badge b-c">内容拓展</span></div>
 <p class="sec-intro">提供整个项目的文化/故事基础。非纯程序模块，为所有内容模块提供创作依据。</p><div class="sm"><div class="sm-t">世界观设定 <span class="tt t-c">Content</span></div>
 <div class="sm-d"><b>模块内容概述：</b>世界背景（时代/地理/文明/势力）；核心冲突与主题；种族/阵营设定；重要地点描述；历史年表。</div>
 <div class="dec"><b>📋 策划需决策：</b>① 世界观基调——写实 vs 奇幻 vs 科幻 vs 混合；② 势力数量和关系复杂度；③ 历史年表的深度（简要大事记 vs 详细编年史）。</div>
@@ -388,7 +435,7 @@
 
 <div class="sec" id="sec-level"><div class="sec-h">
 <div class="ic" style="background:rgba(52,211,153,.15)">🗺️</div>
-<h2>10 · 关卡系统（地图/天气/过场）</h2><span class="badge b-m">混合型</span></div>
+<h2>11 · 关卡系统（地图/天气/过场）</h2><span class="badge b-m">混合型</span></div>
 <p class="sec-intro">开放世界空间体验核心。</p><div class="sm"><div class="sm-t">世界地图与小地图 <span class="tt t-m">Mixed</span></div>
 <div class="sm-d"><b>模块内容概述：</b>地图数据结构；迷雾揭露机制；地图标记系统；POI分类；快速传送点设计。</div>
 <div class="dec"><b>📋 策划需决策：</b>① 迷雾揭露方式——探索自动 vs 瞭望塔 vs 任务解锁；② 快速传送限制条件；③ 地图标记是否队友共享。</div>
@@ -427,7 +474,7 @@
 
 <div class="sec" id="sec-mission"><div class="sec-h">
 <div class="ic" style="background:rgba(251,191,36,.15)">📜</div>
-<h2>11 · 任务与对话系统</h2><span class="badge b-c">内容拓展</span></div>
+<h2>12 · 任务与对话系统</h2><span class="badge b-c">内容拓展</span></div>
 <p class="sec-intro">开放世界的核心内容载体。</p><div class="sm"><div class="sm-t">任务框架 <span class="tt t-c">Content</span></div>
 <div class="sm-d"><b>模块内容概述：</b>任务类型分类；数据结构；状态流转；目标类型（到达/击杀/收集/对话/护送/计时等）；追踪与标记；多人共享；编辑器需求。</div>
 <div class="dec"><b>📋 策划需决策：</b>① 任务是否有失败/超时；② 多人任务进度共享方式；③ 是否有随机生成任务/事件。</div>
@@ -445,7 +492,7 @@
 
 <div class="sec" id="sec-achieve"><div class="sec-h">
 <div class="ic" style="background:rgba(251,191,36,.15)">🏆</div>
-<h2>12 · 成就/收集系统</h2><span class="badge b-c">内容拓展</span></div>
+<h2>13 · 成就/收集系统</h2><span class="badge b-c">内容拓展</span></div>
 <p class="sec-intro">长期目标和探索激励。</p><div class="sm"><div class="sm-t">成就系统 <span class="tt t-c">Content</span></div>
 <div class="sm-d"><b>模块内容概述：</b>成就数据结构；分类；进度追踪；解锁通知；平台同步。</div>
 <div class="dec"><b>📋 策划需决策：</b>① 成就总数量和分类比例；② 是否有隐藏成就；③ 成就奖励是仅展示还是有实质道具。</div>
@@ -463,7 +510,7 @@
 
 <div class="sec" id="sec-economy"><div class="sec-h">
 <div class="ic" style="background:rgba(251,191,36,.15)">💰</div>
-<h2>13 · 经济系统</h2><span class="badge b-c">内容拓展</span></div>
+<h2>14 · 经济系统</h2><span class="badge b-c">内容拓展</span></div>
 <p class="sec-intro">游戏内货币流转、商店、玩家交易与现金商城。</p><div class="sm"><div class="sm-t">货币与NPC商店 <span class="tt t-c">Content</span></div>
 <div class="sm-d"><b>模块内容概述：</b>货币类型；收支平衡；NPC商店类型；刷新机制；价格体系。</div>
 <div class="dec"><b>📋 策划需决策：</b>① 货币种类数量（太多困惑太少缺分层）；② 通胀控制机制（货币回收渠道）；③ 商品是否限购。</div>
@@ -488,7 +535,7 @@
 
 <div class="sec" id="sec-social"><div class="sec-h">
 <div class="ic" style="background:rgba(52,211,153,.15)">👥</div>
-<h2>14 · 社交系统（多人/组队/聊天/排行榜）</h2><span class="badge b-m">混合型</span></div>
+<h2>15 · 社交系统（多人/组队/聊天/排行榜）</h2><span class="badge b-m">混合型</span></div>
 <p class="sec-intro">GTA5式组队开局 + 社交功能。</p><div class="sm"><div class="sm-t">大厅/房间/匹配 <span class="tt t-i">Infra</span></div>
 <div class="sm-d"><b>模块内容概述：</b>房间创建/加入/退出；房间配置；匹配机制；等待界面；转场流程。</div>
 <div class="dec"><b>📋 策划需决策：</b>① 匹配模式——快速 vs 自定义 vs 两者并存；② 房间人数上限；③ 是否跨服匹配。</div>
@@ -534,7 +581,7 @@
 
 <div class="sec" id="sec-audio"><div class="sec-h">
 <div class="ic" style="background:rgba(99,102,241,.15)">🔊</div>
-<h2>15 · 音频系统</h2><span class="badge b-i">底层机制</span></div>
+<h2>16 · 音频系统</h2><span class="badge b-i">底层机制</span></div>
 <p class="sec-intro">统一的音频播放/管理框架。</p><div class="sm"><div class="sm-t">音频框架 <span class="tt t-i">Infra</span></div>
 <div class="sm-d"><b>模块内容概述：</b>音频中间件选型（Wwise/FMOD/MetaSound）；音频分层（BGM/环境/SFX/UI/语音）；空间音频；事件系统；动态混音；性能预算。</div>
 <div class="dec"><b>📋 策划需决策：</b>① 中间件选择——Wwise（功能强/授权费）vs FMOD（轻量/免费门槛低）vs MetaSound（引擎原生/生态新）；② 是否需要空间音频（3D定位/遮挡/混响）；③ 动态混音策略。</div>
