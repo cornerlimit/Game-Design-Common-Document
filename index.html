@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Gameplay功能模块总览 V3</title><style>:root{--bg:#0f1117;--sf:#181a20;--sf2:#1e2028;--bd:#2a2d38;--tx:#e4e4e7;--dim:#9ca3af;--ac:#6366f1;--al:#818cf8;--gn:#34d399;--yl:#fbbf24;--or:#f97316;--cy:#22d3ee}*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--tx);line-height:1.7}.hero{background:linear-gradient(135deg,#1e1b4b 0%,#0f1117 60%,#064e3b 100%);padding:50px 30px 40px;text-align:center;border-bottom:1px solid var(--bd)}.hero h1{font-size:2rem;font-weight:700;margin-bottom:10px;background:linear-gradient(90deg,var(--al),var(--cy));-webkit-background-clip:text;-webkit-text-fill-color:transparent}.hero p{color:var(--dim);font-size:.95rem;max-width:800px;margin:0 auto}.hero .meta{margin-top:14px;font-size:.82rem;color:#6b7280}.ct{max-width:1360px;margin:0 auto;padding:36px 28px 80px}.toc{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:24px 28px;margin-bottom:40px}.toc h2{font-size:1.1rem;margin-bottom:14px;color:var(--al)}.toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:6px 20px}.toc a{color:var(--dim);text-decoration:none;font-size:.88rem;padding:3px 0;display:flex;align-items:center;gap:6px}.toc a:hover{color:var(--al)}.toc .n{color:var(--ac);font-weight:600;min-width:26px}.legend{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:16px 24px;margin-bottom:40px;display:flex;flex-wrap:wrap;gap:20px;font-size:.83rem}.legend-i{display:flex;align-items:center;gap:6px}.legend-d{width:10px;height:10px;border-radius:3px}.note{background:rgba(99,102,241,.06);border-left:3px solid var(--ac);padding:12px 16px;border-radius:0 8px 8px 0;margin:0 0 36px;font-size:.84rem;color:var(--dim)}.sec{margin-bottom:48px}.sec-h{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--bd)}.sec-h .ic{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}.sec-h h2{font-size:1.3rem;font-weight:700}.badge{font-size:.7rem;padding:2px 9px;border-radius:18px;font-weight:600}.b-i{background:rgba(99,102,241,.15);color:var(--al)}.b-c{background:rgba(251,191,36,.15);color:var(--yl)}.b-m{background:rgba(52,211,153,.15);color:var(--gn)}.sec-intro{color:var(--dim);font-size:.9rem;margin-bottom:16px}.sm{background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:20px 24px;margin-bottom:14px}.sm:hover{border-color:#3b3f50}.sm-t{font-size:1rem;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:8px}.tt{font-size:.66rem;padding:2px 7px;border-radius:4px;font-weight:600}.t-i{background:rgba(99,102,241,.12);color:var(--al)}.t-c{background:rgba(251,191,36,.12);color:var(--yl)}.t-m{background:rgba(52,211,153,.12);color:var(--gn)}.sm-d{color:var(--dim);font-size:.86rem;margin-bottom:10px}.dec{background:rgba(34,211,238,.05);border-left:3px solid var(--cy);padding:10px 14px;border-radius:0 7px 7px 0;margin-bottom:10px;font-size:.84rem;color:var(--cy)}.nt{background:rgba(249,115,22,.05);border-left:3px solid var(--or);padding:10px 14px;border-radius:0 7px 7px 0;margin-bottom:12px;font-size:.84rem;color:var(--or)}.dg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}@media(max-width:768px){.dg{grid-template-columns:1fr}}.db{background:var(--sf2);border-radius:7px;padding:10px 14px;font-size:.8rem}.db .lb{font-weight:600;margin-bottom:4px;display:flex;align-items:center;gap:5px}.lb.p{color:var(--or)}.lb.r{color:var(--cy)}.db ul{list-style:none;padding:0;color:var(--dim)}.db li::before{content:"\00b7  ";color:#555}.ot{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:4px}.ot th{background:var(--sf2);text-align:left;padding:7px 10px;font-weight:600;color:var(--dim);border-bottom:1px solid var(--bd)}.ot td{padding:7px 10px;border-bottom:1px solid #222430;color:var(--dim);vertical-align:top}.ot tr:last-child td{border-bottom:none}.sec[id]{scroll-margin-top:20px}.legend-v3{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:24px 28px;margin-bottom:30px}.legend-v3 h3{font-size:1rem;margin-bottom:16px;color:var(--al)}.lg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}.lg-card{background:var(--sf2);border-radius:8px;padding:14px 16px}.lg-head{display:flex;align-items:center;gap:8px;font-size:.88rem;margin-bottom:8px}.lg-body{font-size:.82rem;color:var(--dim);line-height:1.6}.guide-btn{display:inline-block;margin-top:16px;padding:8px 24px;background:linear-gradient(90deg,var(--ac),#22d3ee);color:#fff;text-decoration:none;border-radius:8px;font-size:.9rem;font-weight:600;transition:opacity .2s}.guide-btn:hover{opacity:.85}</style></head>
 <body><div class="hero"><h1>开放世界动作冒险游戏 · Gameplay 功能模块总览</h1>
 <p>面向含多人组队开局玩法（GTA5式大厅→开放世界）的3D动作冒险项目。<br>本文档为<b>模块拆分总纲</b>，指导各功能策划撰写详细设计案，并明确对下游的交付要求。<br><b>每个子模块新增：策划决策要点 + 注意点与边界问题。</b></p>
-<div class="meta">参考作品：塞尔达·旷野之息/王国之泪 · GTA5 · 原神 · 对马岛之魂 &nbsp;|&nbsp; 16 大模块 / 73 子模块 &nbsp;|&nbsp; V3.0 &nbsp;|&nbsp; 2026-04-09</div>
+<div class="meta">参考作品：塞尔达·旷野之息/王国之泪 · GTA5 · 原神 · 对马岛之魂 &nbsp;|&nbsp; 16 大模块 / 77 子模块 &nbsp;|&nbsp; V3.0 &nbsp;|&nbsp; 2026-04-09</div>
 <a class="guide-btn" href="writing-guide.html" target="_blank">📝 策划文档撰写指南 →</a></div>
 <div class="ct">
 <div class="legend-v3">
@@ -14,246 +14,274 @@
 <div class="lg-card"><div class="lg-head"><div class="legend-d" style="background:var(--cy)"></div>🔄 <b>关联模块</b></div><div class="lg-body">开发上不重复造轮子，而是使用相关模块已有的功能；或者本模块的功能开发，需要拓展相关模块的功能（配合开发）。</div></div>
 </div></div>
 <div class="note"><b>阅读说明：</b>每个子模块卡片包含六个维度——① 模块内容概述 ② <span style="color:var(--cy)">📋 策划需决策的要点</span> ③ <span style="color:var(--or)">⚠️ 注意点与边界问题</span> ④ 前置依赖 ⑤ 关联模块 ⑥ 下游交付需求与策划输入物。</div>
-<div class="toc"><h2>📑 模块总览目录（16 大模块 / 73 子模块）</h2><div class="toc-grid"><a href="#sec-3c"><span class="n">01</span>3C 系统（角色/相机/控制/属性/交互）</a><a href="#sec-combat"><span class="n">02</span>战斗系统</a><a href="#sec-interact"><span class="n">03</span>交互系统</a><a href="#sec-item"><span class="n">04</span>物品系统（道具/装备/制作/掉落）</a><a href="#sec-ai"><span class="n">05</span>AI 系统</a><a href="#sec-physics"><span class="n">06</span>物理系统（拓展）</a><a href="#sec-vehicle"><span class="n">07</span>载具系统</a><a href="#sec-ui"><span class="n">08</span>UI / HUD / 引导</a><a href="#sec-base"><span class="n">09</span>基础系统（存档/拍照/设置）</a><a href="#sec-world"><span class="n">10</span>世界观与叙事</a><a href="#sec-level"><span class="n">11</span>关卡系统（地图/天气/过场）</a><a href="#sec-mission"><span class="n">12</span>任务与对话系统</a><a href="#sec-achieve"><span class="n">13</span>成就/收集系统</a><a href="#sec-economy"><span class="n">14</span>经济系统</a><a href="#sec-social"><span class="n">15</span>社交系统（多人/组队/聊天/排行榜）</a><a href="#sec-audio"><span class="n">16</span>音频系统</a></div></div>
+<div class="toc"><h2>📑 模块总览目录（16 大模块 / 77 子模块）</h2><div class="toc-grid"><a href="#sec-3c"><span class="n">01</span>3C 系统（角色/相机/控制/属性）</a><a href="#sec-combat"><span class="n">02</span>战斗系统</a><a href="#sec-interact"><span class="n">03</span>交互系统</a><a href="#sec-item"><span class="n">04</span>物品系统</a><a href="#sec-ai"><span class="n">05</span>AI 系统</a><a href="#sec-physics"><span class="n">06</span>物理系统（拓展）</a><a href="#sec-vehicle"><span class="n">07</span>载具系统</a><a href="#sec-ui"><span class="n">08</span>UI / HUD / 引导</a><a href="#sec-base"><span class="n">09</span>基础系统（存档/拍照/设置）</a><a href="#sec-world"><span class="n">10</span>世界观与叙事</a><a href="#sec-level"><span class="n">11</span>关卡系统（地图/天气/过场）</a><a href="#sec-mission"><span class="n">12</span>任务与对话系统</a><a href="#sec-achieve"><span class="n">13</span>成就/收集系统</a><a href="#sec-economy"><span class="n">14</span>经济系统</a><a href="#sec-social"><span class="n">15</span>社交系统（多人/组队/聊天/排行榜）</a><a href="#sec-audio"><span class="n">16</span>音频系统</a></div></div>
 <div class="sec" id="sec-3c"><div class="sec-h">
 <div class="ic" style="background:rgba(52,211,153,.15)">🎮</div>
-<h2>01 · 3C 系统（角色/相机/控制/属性/交互）</h2><span class="badge b-m">混合型</span></div>
-<p class="sec-intro">角色控制手感基石。整合角色运动、相机、交互、属性数值、主角设计与等级成长。</p><div class="sm"><div class="sm-t">主角/可玩角色设计 <span class="tt t-c">Content</span></div>
-<div class="sm-d"><b>模块内容概述：</b>主角背景与性格；角色列表与差异化方向；角色外观设计指引；角色语音风格。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 是否多角色切换（单主角 vs 多角色如原神）；② 是否有职业/种族系统——若有需明确数量与属性/技能倾向差异；③ 是否支持捏脸——若支持确定维度（面部骨骼调节粒度、预设数量、发型/肤色/瞳色/体型范围）；④ 是否支持换装——确定部位划分（头/上衣/下装/鞋/配饰/武器皮肤等）、换装是否影响属性还是纯外观。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>捏脸骨骼变形影响动画适配和装备穿戴，需提前和TA/动画对齐方案；多职业设计成倍增加技能和平衡工作量；换装部位划分直接影响美术资产拆分。</div>
+<h2>01 · 3C 系统（角色/相机/控制/属性）</h2><span class="badge b-m">混合型</span></div>
+<p class="sec-intro">角色控制手感基石。整合角色运动、相机、属性数值、主角设计与等级成长。</p><div class="sm"><div class="sm-t">主角/可玩角色设计 <span class="tt t-c">Content</span></div>
+<div class="sm-d"><b>模块内容概述：</b>主角背景与性格；外形与变化；角色列表与差异化方向；语音风格；角色动画逻辑构建；角色初始化流程搭建；角色获取登录方式；多角色切换需要设计多角色管理系统。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 是否多角色切换（单主角 vs 多角色如原神）；② 是否有职业/种族系统——若有需明确数量与属性/技能倾向差异；③ 是否支持捏脸——若支持确定维度（面部骨骼调节粒度、预设数量、发型/肤色/瞳色/体型范围）；④ 是否支持换装——确定部位划分、换装是否影响属性还是纯外观。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 捏脸骨骼变形影响动画适配和装备穿戴，需提前和TA/动画对齐方案；② 多职业设计成倍增加技能和平衡工作量；③ 换装部位划分直接影响美术资产拆分；④ 多角色还是单角色，以及其形式，关系到游戏类型，群体认知度，战斗体系规划和商业化设计。</div>
 <div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>世界观设定</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>属性/成长系统</li><li>技能系统</li><li>对话系统</li><li>UI</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>美术</td><td>角色概念原画、3D模型/骨骼、捏脸系统资产、换装部件模型</td><td>角色设计文档（含职业/种族定义、捏脸维度、换装部位拆分方案）</td></tr><tr><td>音频</td><td>角色语音/喊叫/呼吸声</td><td>语音风格文档</td></tr></table></div>
-<div class="sm"><div class="sm-t">等级经验值系统 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>经验获取途径；等级上限；经验曲线设计；等级提升的全局影响。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 经验曲线模型——平缓线性 vs 后期陡峭指数型；② 等级提升收益种类——属性强化（每级加多少）、技能学习/解锁、系统开启（XX级开坐骑/PVP）、新区域解锁；③ 多人场景是否有等级同步/压制机制。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>等级曲线直接影响游戏节奏和留存；系统开启绑定等级需提前规划全周期节奏表；多人模式等级差异过大影响组队体验。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>数据结构基础框架</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>属性计算</li><li>技能系统</li><li>任务系统</li><li>UI</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>等级经验管理器、升级事件广播、系统开启控制器</td><td>等级-经验曲线表；每级属性成长表；系统开启节点表</td></tr><tr><td>UI</td><td>经验条/升级特效</td><td>UX设计稿</td></tr></table></div>
-<div class="sm"><div class="sm-t">属性计算模块 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>一级属性与二级属性定义与转换公式；属性上限/下限；属性来源层级与叠加规则；伤害公式；属性面板展示。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 是否采用传统一级→二级转换模型还是扁平化设计；② 伤害减伤模型选择——百分比减伤 vs 护甲值曲线 vs 固定减伤；③ 属性叠加优先级——加法/乘法顺序；④ 是否有属性软/硬上限（如暴击率最高75%）。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>属性公式确定后修改成本极高；减伤模型影响整个战斗节奏；属性来源层级越多排查Bug越困难，建议建属性调试工具。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>数据结构基础</li><li>等级经验值系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>Buff系统</li><li>装备系统</li><li>技能系统</li><li>UI/HUD</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>属性组件（GAS/自研）、伤害计算管线</td><td>属性定义文档（含公式推导）；伤害公式文档</td></tr><tr><td>程序（后端）</td><td>属性存储、校验、同步</td><td>属性同步需求文档</td></tr><tr><td>UI</td><td>属性面板</td><td>UX设计稿</td></tr></table></div>
-<div class="sm"><div class="sm-t">基础地面运动 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>走/跑/冲刺速度曲线；下蹲/滑行触发；转向响应；多段跳；跑酷动作（翻越/侧翻/攀墙跳/滑铲）触发条件。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 运动模式保留哪些——走、跑、冲刺、跳跃、下蹲、下蹲移动、二段跳，哪些核心保留哪些裁剪；② 冲刺是否消耗体力；③ 跑酷动作自动触发 vs 手动触发；④ 是否有惯性系统（急停滑行/转弯倾斜）。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>运动状态越多动画量越大Bug越多——先做核心集再扩展；自动翻越需和关卡组对齐障碍物标准尺寸；冲刺体力和攀爬/游泳共用同一资源需统一规划。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>动画状态机框架</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统</li><li>音频</li><li>天气系统</li><li>Buff系统</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>角色运动Controller、状态机、Input Mapping</td><td>运动状态设计表；状态转换逻辑图</td></tr><tr><td>美术</td><td>全套运动动画资产</td><td>动作资产需求表</td></tr><tr><td>音频</td><td>脚步声（按材质）、冲刺音效</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">攀爬系统 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>可攀爬表面判定；体力消耗；攀爬操作限制；Ledge Grab检测。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 攀爬是否有体力限制（旷野之息式）还是无限攀爬（刺客信条式）；② 攀爬中可否执行其他操作；③ 所有表面均可攀爬还是仅标记表面。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>全表面可攀爬极大增加关卡设计难度（玩家可能跳过预设路线）；体力限制与速度的平衡直接影响探索体验。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>基础运动</li><li>角色属性（体力）</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统</li><li>天气系统</li><li>关卡设计</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>攀爬检测、IK吸附、体力扣减</td><td>攀爬参数表</td></tr><tr><td>美术</td><td>攀爬动画集</td><td>动作需求表</td></tr><tr><td>音频</td><td>攀爬声效</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">勾索/钩爪 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>勾索点检测方式；射程与角度限制；运动曲线；可中断条件；与战斗配合。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 勾索点是预设固定点还是任意锚点；② 运动类型——拉向目标 vs 摆荡 vs 滑索；③ 勾索中可否执行战斗动作。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>自由勾索比固定点复杂度高数倍；勾索运动需和相机紧密配合否则容易晕动。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>基础运动</li><li>物理碰撞</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统</li><li>交互系统</li><li>战斗系统</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>勾索检测、绳索物理、轨迹插值</td><td>勾索参数表；放置规范</td></tr><tr><td>美术</td><td>勾索动画、钩爪模型/特效</td><td>动作需求表</td></tr><tr><td>音频</td><td>勾索音效</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">游泳/潜水 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>水面检测与入水/出水过渡；氧气/体力消耗；水中操作限制；水流影响。</div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>3C模块(全)</li><li>技能系统</li><li>UI/HUD</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>美术</td><td>角色概念原画、3D模型/骨骼、捏脸系统资产、换装部件模型</td><td>角色设计文档（含职业/种族定义、捏脸维度、换装部位拆分方案）</td></tr><tr><td>程序</td><td>初始化加载流程；根据需求：换装系统、捏脸/换脸系统、角色选择登录页面；抽卡系统</td><td>—</td></tr><tr><td>音频</td><td>角色基础语音/喊叫</td><td>语音风格文档</td></tr></table></div>
+<div class="sm"><div class="sm-t">角色属性系统 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>属性设置与定义；上下限设置；属性同步设置（网游）；一级属性与二级属性转换公式；属性来源层级与叠加规则；伤害计算公式；属性面板显示。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 角色属性是否采用传统一级→二级转换模型还是扁平化设计；② 伤害减伤模型选择——百分比减伤 vs 护甲值曲线 vs 固定减伤；③ 对于自写属性同步机制的，需要根据游戏类型，决定高频同步属性与常规同步属性。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 伤害计算公式影响整个战斗节奏；② 属性来源层级越多排查Bug越困难，建议建属性调试工具。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>数据结构基础</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>技能系统</li><li>Buff系统</li><li>装备系统</li><li>UI/HUD</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>属性组件（GAS/自研）、伤害计算管线、属性存储、校验、同步</td><td>—</td></tr><tr><td>UI</td><td>属性面板</td><td>UX设计稿</td></tr></table></div>
+<div class="sm"><div class="sm-t">等级经验系统 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>经验获取途径；经验曲线设计；等级经验关联；等级上限；等级提升的全局影响。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 经验曲线模型——平缓线性 vs 后期陡峭指数型；② 等级提升收益种类——属性强化、技能学习/解锁、系统开启（XX级开坐骑/PVP）、新区域解锁；③ 多人场景是否有等级同步/压制机制；④ 是否有等级锁。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 等级曲线直接影响游戏节奏和留存；② 系统开启绑定等级需提前规划全周期节奏表。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>数据结构基础</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>属性计算（升级强化）</li><li>技能系统（技能学习/天赋激活）</li><li>任务系统（任务关联）</li><li>UI/HUD（系统入口开启/等级显示）</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>等级经验管理器、升级事件广播、系统开启控制器</td><td>—</td></tr><tr><td>UI</td><td>经验等级显示、管理面板</td><td>UX设计稿</td></tr><tr><td>美术</td><td>升级特效</td><td>特效需求描述</td></tr></table></div>
+<div class="sm"><div class="sm-t">输入模块 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>键位映射与切换机制；操控方式；组合键机制；QTE按键机制；动态按键机制；手柄震动；无障碍功能（Auto-Run、一键连招）。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 项目会用到哪些输入设备；② 是否支持玩家自定义按键；③ 同一按键在不同场景下含义是否变化；④ 技能按键缓存；⑤ 额外输入模式（组合键/QTE等）。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 同时按键的优先级；② 不同状态按键映射切换管理。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>角色控制器</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>各类移动模块</li><li>技能系统</li><li>枪械系统</li><li>交互系统</li><li>载具系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>按键Action清单；映射配置方式；可调参数汇总</td><td>—</td></tr><tr><td>UI</td><td>移动端按键布局（如支持移动平台）</td><td>HUD Input UX设计稿</td></tr></table></div>
+<div class="sm"><div class="sm-t">基础移动 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>基础运动包含：走/跑/冲刺/跳跃/多段跳/下蹲/下蹲移动。走/跑/冲刺关注速度曲线与加速度配置，转向灵活性/响应曲线/角速度，地面倾斜适配；跳跃/多段跳关注起跳垂直速度和水平速度，起跳和下落阶段的重力缩放，空中运动控制、阻力；不同高度下落的硬直与动画表现；下蹲关注胶囊体高度变化、触发机制、速度变化；各运动间的关联关系与过渡平滑；需配置不同状态间相机变化；保证角色动作细节衔接流畅度，添加必要IK效果。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 运动模式保留哪些；② 冲刺是否消耗体力；③ 是否有惯性系统（急停滑行/转弯倾斜）；④ 是否使用动画位移如Motion Matching技术；⑤ 下落是否受伤；⑥ 不同运动的触发方式。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 确保核心参数的可配置调整；② 根据游戏类型添加优化手感的机制。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理系统（地面检测、碰撞体）</li><li>动画状态机基础框架</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统</li><li>控制系统（输入与运动方向变化）</li><li>音频系统（脚步声/材质映射）</li><li>属性系统（减速/加速效果）</li><li>天气系统（气候运动变化）</li><li>环境系统（环境速度变化/脚步痕迹）</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>角色运动Controller、状态机实现、Input Mapping</td><td>运动状态设计表（含速度/加速度/转向参数）；状态转换逻辑图</td></tr><tr><td>美术</td><td>全套运动动画资产（Locomotion BlendSpace、过渡动画）</td><td>动作资产需求表</td></tr><tr><td>音频</td><td>脚步声音效集（按材质分类）、滑行/冲刺音效</td><td>音效需求表（触发条件、材质映射逻辑）</td></tr></table></div>
+<div class="sm"><div class="sm-t">攀爬 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>攀爬进入和退出条件；状态机管理；操控切换与限定；通过能力；攀爬限定（角度/材质Tag）；消耗回复机制；跳跃/悬挂机制；Ledge Grab检测与动画过渡；Ladder攀爬。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 决策攀爬类型：塞尔达式只关注垂面性质和角度，神秘海域式需要摆放抓点，或超自然形式（蜘蛛侠跑墙、武侠轻功）；② 攀爬是否有体力限制，以及体力耗尽后的变化处理；③ 攀爬中可否执行其他操作，并列举。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 全表面可攀爬极大增加关卡设计难度（玩家可能跳过预设路线）；② 体力限制与速度的平衡直接影响探索体验；而对应属性成长又需要考虑通过能力变化。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理系统（表面法线检测、碰撞检测）</li><li>运动状态机</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统（攀爬视角约束）</li><li>天气系统（雨天打滑）</li><li>属性系统（体力值）</li><li>关卡设计工具（标记可攀爬表面）</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>攀爬检测、IK手脚吸附、属性管理、运动状态管理</td><td>—</td></tr><tr><td>美术</td><td>攀爬相关动作（攀爬/悬挂等）</td><td>资产需求表</td></tr><tr><td>音频</td><td>攀爬音效</td><td>音频需求表（RTPC参数、配置说明）</td></tr></table></div>
+<div class="sm"><div class="sm-t">游泳 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>水面检测与入水/出水过渡；水面游泳与水下潜水切换条件；氧气/体力消耗；水中操作限制；水流影响；水面交互物；水下环境的后处理效果。</div>
 <div class="dec"><b>📋 策划需决策：</b>① 是否支持潜水（需水下视觉/氧气/战斗等完整方案）；② 水中可否战斗/使用道具；③ 是否有水流影响运动。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>潜水引入大量额外工作（相机/光照/后处理/AI/关卡）需评估ROI；水面↔水下切换是技术难点。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>基础运动</li><li>角色属性</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统</li><li>天气/环境</li><li>渲染</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>水体检测、浮力模拟、游泳控制器</td><td>游泳参数表</td></tr><tr><td>美术</td><td>游泳/潜水动画集</td><td>动作需求表</td></tr><tr><td>音频</td><td>入水声、水下环境音</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">滑翔/滑翔伞 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>触发条件；滑翔速度/下降率/方向控制；气流影响；体力消耗。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 滑翔是否消耗体力；② 是否有上升气流等环境交互；③ 滑翔中可否执行其他操作。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>滑翔+攀爬+多段跳的组合极大影响地图垂直维度设计——关卡组需提前知道角色最大垂直移动能力。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>基础运动</li><li>物理碰撞</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统</li><li>天气系统</li><li>关卡设计</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>滑翔控制器、气流检测</td><td>滑翔参数表</td></tr><tr><td>美术</td><td>滑翔伞模型/动画</td><td>动作需求表</td></tr><tr><td>音频</td><td>风声、布料声</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">相机系统 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>第三人称相机参数；各状态相机行为预设；碰撞避让；Screen Shake规范；锁定目标逻辑。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 是否支持第一人称切换（如瞄准时自动切）；② 目标锁定方式——自动/手动/软锁定；③ 多人是否有分屏需求。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>相机是体验的放大镜——手感好坏很大程度取决于相机调教；不同状态切换需平滑过渡；碰撞避让是长期调优项。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>基础运动</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>战斗系统</li><li>载具系统</li><li>过场演出</li><li>UI/HUD</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>相机管理器、各模式Camera Rig、碰撞避让</td><td>相机行为参数表；震动配置表</td></tr></table></div></div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 潜水引入大量额外工作（相机/光照/后处理/AI/关卡）需评估ROI；② 水面↔水下切换是技术难点。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理系统</li><li>基础运动</li><li>运动状态机</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统</li><li>属性系统</li><li>操控系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>水体检测、浮力模拟、涟漪效果、游泳控制器</td><td>—</td></tr><tr><td>美术</td><td>游泳/潜水动画集；水体材质与后处理；涟漪材质</td><td>动作需求表</td></tr><tr><td>音频</td><td>入水声、水下环境音</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">坡道滑行 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>玩家在斜坡上坐姿或躺姿高速下滑的移动机制；包括触发机制；结束判定；滑行中的运动惯性；速度变化机制；操控性；跳跃机制；坡道贴合与障碍忽略。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 基于物理材质检测触发和结束，还是基于Volume触发；② 是否存在动态坡道。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 多人同步问题；② 移动进入和下落进入滑行的动作细节。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理检测</li><li>运动状态机</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统</li><li>操控系统</li><li>关卡系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>功能实现、关卡设置方式提供</td><td>—</td></tr><tr><td>美术</td><td>坡道滑行动画、不同材质地面运动特效、环境痕迹</td><td>特效需求表；动画需求表</td></tr><tr><td>音频</td><td>不同材质地面摩擦声音</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">跑酷越障 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>根据动态的环境细节，通过滑铲、翻滚、跑酷型跳跃等方式通过障碍。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 支持哪些障碍类型；② 确定每种障碍的高低、厚度、长度尺寸，防止模糊叠加范围；③ 是否支持在空中检测并变化通过方式；④ 是否提供行为奖励。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 复杂环境的检测能力；② 判定的优先级。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理检测</li><li>基础地面运动</li><li>运动状态机</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统</li><li>操控系统</li><li>属性系统</li><li>关卡系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>不同跑酷的功能实现</td><td>—</td></tr><tr><td>美术</td><td>各种过障动作</td><td>动画需求表</td></tr><tr><td>音频</td><td>相关动作的音效（非必须）</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">勾索/钩爪 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>勾索点检测方式；勾索点机制；射程与角度限制；运动曲线；是否有主动可控的摆荡过程；可中断条件；与战斗配合。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 勾索点是预设固定点还是任意锚点；② 运动类型——拉向目标 vs 摆荡 vs 滑索；③ 勾索中可否执行战斗动作。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 自由勾索比固定点复杂度高数倍；② 勾索运动需和相机紧密配合否则容易晕动。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理系统</li><li>基础运动</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统</li><li>交互系统</li><li>技能系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>勾索检测、绳索物理、轨迹插值</td><td>勾索参数表</td></tr><tr><td>美术</td><td>勾索动画、钩爪模型/特效</td><td>放置规范、动作需求表</td></tr><tr><td>音频</td><td>勾索射出/命中/收回音效、风声</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">滑翔/降落 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>触发条件；降落的操控与惯性；滑翔翼的物理运动；加速方式；气流影响；开始和结束条件。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 滑翔与降落是否并存，并有切换；② 是否有上升气流等环境交互；③ 滑翔中可否执行其他操作。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 滑翔+攀爬+多段跳的组合极大影响地图垂直维度设计；② 高处对于关卡Streaming的影响。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>基础运动</li><li>载具物理</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统</li><li>天气系统</li><li>关卡系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>滑翔控制器、气流检测、提供可操控参数</td><td>—</td></tr><tr><td>美术</td><td>降落/滑翔动画、滑翔伞模型</td><td>动作需求表</td></tr><tr><td>音频</td><td>风声、布料声</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">相机系统 <span class="tt t-m">Mixed</span></div>
+<div class="sm-d"><b>模块内容概述：</b>建立优先级，管理Cine/Bone/Pawn三种相机；相机栈；基础相机参数（ArmLength/Socket Location/FOV）；角色状态监控和自动切换；旋转角度限制；旋转灵敏度切换；POI、Skill的手动切换；相机动态运动修改器；相机间过渡控制；屏震控制。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 多人是否有分屏需求；② 并发复杂度；③ 复杂运镜实现方式（美术？程序？策划？）。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 需要统一各类相机参数的配置，防止散落；② 数据驱动；③ 系统解耦。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>基础相机</li><li>运动状态</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>过场演出</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>多相机模式、各模式Camera Rig、Camera Modifier、状态监听机制、相机栈与控制方式、Blend In/Out参数、开放可配置参数表</td><td>—</td></tr><tr><td>策划</td><td>各Camera数据与动态逻辑</td><td>各运动模式相机需求参考</td></tr></table></div></div>
 
 <div class="sec" id="sec-combat"><div class="sec-h">
 <div class="ic" style="background:rgba(52,211,153,.15)">⚔️</div>
 <h2>02 · 战斗系统</h2><span class="badge b-m">混合型</span></div>
-<p class="sec-intro">核心战斗循环，含近战/远程/枪械/技能/Buff/天赋/防御/机关/陷阱等。</p><div class="sm"><div class="sm-t">近战判定/打击盒 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>Hitbox/Hurtbox定义；连招框架；Cancel Window；多段判定；霸体/打断优先级。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 连招复杂度——固定招式表 vs 自由连招 vs 简化连击；② 是否有武器切换/独立连招树；③ 霸体等级划分。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>连招越复杂QA用例越多（排列组合）；Hitbox精度需和性能预算平衡。</div>
+<p class="sec-intro">核心战斗循环，含技能/Buff/抛体/命中/打击反馈/枪械/连招/防御/锁定/天赋/陷阱/机关。</p><div class="sm"><div class="sm-t">技能体系 <span class="tt t-m">Mixed</span></div>
+<div class="sm-d"><b>模块内容概述：</b>技能数据结构；技能生命周期和闭环回滚机制；同步机制；预测和回退；技能状态机；技能类型与属性；技能Slot；技能学习与装配；技能按键与缓存；被动技能触发机制；注册事件；技能变量；技能功能（单体伤害/群体伤害/回复）；技能目标/目标点获取方式；技能升级；处决机制；QTE技能。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 技能阶段与结构灵活性（技能复杂度）；② 技能间的复杂度（可并发性/运动状态结合/派生机制/立回变招）；③ 核心资源在攻防间的获取与消耗；④ 是否强动作性（精确打击/连招系统/部位反馈与硬直等级/浮空打击/处决等）。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 技能系统是内容量最大模块之一需完善编辑器；② 技能网络同步是战斗体验关键。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>属性系统</li><li>动画系统</li><li>输入系统</li><li>相机系统</li><li>命中判定</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>Buff系统</li><li>技能抛体</li><li>枪械系统</li><li>连招/变招</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>技能框架（Ability System）、技能编辑器</td><td>技能配置表模板、每个技能配置数据</td></tr><tr><td>美术</td><td>技能动画/特效/图标</td><td>技能资产清单</td></tr><tr><td>音频</td><td>技能音效</td><td>音效需求表</td></tr><tr><td>策划</td><td>输出主角/怪物等具体技能内容</td><td>技能设计表</td></tr></table></div>
+<div class="sm"><div class="sm-t">Buff系统 <span class="tt t-m">Mixed</span></div>
+<div class="sm-d"><b>模块内容概述：</b>Buff数据结构；叠加规则；互斥/覆盖规则；来源追踪管理；属性修改方式；状态标签；DOT/HOT；复杂逻辑编辑机制；清除/驱散机制。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 是否按来源管理；② 控制类Buff免疫/递减机制（防Boss被无限控）；③ Buff的HUD提示规则（用于类似WOW这类复杂Buff玩法）；④ Buff是否存盘（当Buff参与复杂系统功能时）。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① Buff是数值bug重灾区——建议建调试面板；② Buff和属性交互需有明确计算顺序文档。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>属性系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>技能系统</li><li>UI/HUD</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>Buff功能、Buff编辑器</td><td>Buff配置表模板、Buff总表</td></tr><tr><td>美术</td><td>Buff图标、各类Buff特效</td><td>图标清单、特效需求表</td></tr><tr><td>音频</td><td>Buff音效</td><td>音效需求表</td></tr><tr><td>策划</td><td>输出主角/怪物/陷阱/道具/装备等Buff效果</td><td>—</td></tr></table></div>
+<div class="sm"><div class="sm-t">技能抛体 <span class="tt t-m">Mixed</span></div>
+<div class="sm-d"><b>模块内容概述：</b>运动方式/轨迹；目标策略；可控与修正能力；碰撞策略；触发机制；影响范围；功能效果。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 抛体网络权威——客户端预测+服务端校验 vs 纯服务端；② 是否支持抛体间碰撞；③ 抛体是否快照角色数据；④ 抛体最远运动距离。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 抛体数量多时性能压力大需对象池；② 网络延迟对命中判定影响大需延迟补偿。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>技能系统</li><li>Buff系统</li><li>物理破坏</li><li>输入系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>抛体运动方式、抛体效果配置</td><td>—</td></tr><tr><td>美术</td><td>抛体模型/特效、触发效果（如爆炸）</td><td>模型需求表、特效需求表</td></tr><tr><td>音频</td><td>发射/飞行/触发音效</td><td>音效需求表（基于特效）</td></tr><tr><td>策划</td><td>输出各类具体抛体配置</td><td>抛体设计表</td></tr></table></div>
+<div class="sm"><div class="sm-t">命中判定 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>基于打击盒的近战命中判定；HitBox静态属性（形状/尺寸/旋转）；HitBox动态属性（开关/缩放/过滤规则/缓存规则）；HitBox设置方式（角色/武器/动作）；是否有对抗属性（命中与闪避）。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 基于打击盒判定（动作类）还是基于扫描与属性对抗（MMO）；② 常规打击帧数（影响碰撞精度、预测与缓存）；③ 命中后需要抛出的数据结果。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① Hitbox精度需和性能预算平衡；② HitBox配置方式的灵活性；③ HitBox运动的网络同步。</div>
 <div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>动画系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>打击反馈</li><li>属性计算</li><li>Buff系统</li><li>音频</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>Hitbox/Hurtbox系统、连招状态机</td><td>打击盒配置表；连招输入表</td></tr><tr><td>美术</td><td>攻击动画</td><td>动作需求表</td></tr><tr><td>音频</td><td>挥击/命中音效</td><td>音效需求表</td></tr></table></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>打击反馈</li><li>属性计算</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>Hitbox/Hurtbox系统、连招状态机</td><td>—</td></tr></table></div>
 <div class="sm"><div class="sm-t">打击反馈 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>顿帧(HitStop)；受击动画分类；屏幕震动/镜头拉近；粒子特效；伤害数字；手柄震动。</div>
-<div class="dec"><b>📋 策划需决策：</b>① HitStop是统一的还是按伤害等级分层；② 伤害数字是否区分暴击/元素等样式；③ 受击动画是否分攻击方向。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>打击反馈是&#x27;手感&#x27;的核心——需大量迭代调优；HitStop过长影响节奏，过短缺少打击感。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>近战判定</li><li>相机系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>UI/HUD</li><li>音频</li><li>属性计算</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>HitStop系统、受击状态机、力反馈</td><td>打击反馈配置表</td></tr><tr><td>美术</td><td>受击动画集、命中特效</td><td>特效/动作需求表</td></tr><tr><td>音频</td><td>分层命中音效</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">枪械/射击系统 <span class="tt t-m">Mixed</span></div>
-<div class="sm-d"><b>模块内容概述：</b>武器类型分类；射击模式；弹道模型；后坐力模型；换弹机制；瞄准模式；弹药系统；枪械改装概述。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 弹道模型——hitscan vs projectile vs 混合；② 弹药是否分类型和容量管理；③ 枪械改装深度——仅外观 vs 影响属性。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>hitscan和projectile对网络同步要求完全不同；后坐力模型需反复调教。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>属性计算</li><li>道具系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统</li><li>打击反馈</li><li>UI/HUD</li><li>音频</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>弹道系统、后坐力模型、换弹状态机</td><td>枪械数值配置表</td></tr><tr><td>美术</td><td>枪械模型/动画/特效</td><td>枪械资产清单</td></tr><tr><td>音频</td><td>枪声/弹壳声</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">远程抛体系统 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>抛体类型；弹道物理；命中判定；抛体生命周期；特殊行为（追踪/分裂/延迟引爆）。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 抛体网络权威——客户端预测+服务端校验 vs 纯服务端；② 是否支持抛体间碰撞/反弹；③ 手雷类是否有预瞄轨迹线。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>抛体数量多时性能压力大需对象池；网络延迟对命中判定影响大需延迟补偿。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>属性计算</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>技能系统</li><li>Buff系统</li><li>物理破坏</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>抛体框架、弹道计算、对象池</td><td>抛体类型配置表</td></tr><tr><td>美术</td><td>抛体模型/特效</td><td>特效需求表</td></tr><tr><td>音频</td><td>飞行/爆炸音效</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">防御/格挡/闪避/弹反 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>格挡机制；弹反判定帧；闪避无敌帧设计；盾牌/武器差异化。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 完美格挡/弹反窗口帧数（越短越硬核）；② 闪避无敌帧长度；③ 弹反成功奖励力度。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>弹反窗口在不同帧率下体验不同需按时间定义；闪避无敌帧和攻击帧重叠可能产生非预期操作。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>近战判定</li><li>角色属性</li><li>动画系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>打击反馈</li><li>Buff系统</li><li>音频</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>防御状态逻辑、判定帧系统</td><td>防御参数表</td></tr><tr><td>美术</td><td>格挡/弹反动画、特效</td><td>动作需求表</td></tr><tr><td>音频</td><td>格挡/弹反音效</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">目标锁定系统 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>锁定触发方式；目标选择策略；切换目标逻辑；锁定状态运动变化。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 锁定是toggle还是hold；② 多目标切换方向；③ 锁定状态下是否改变移动方式。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>锁定系统在多敌人和Boss战中体验差异很大需分别测试。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>相机系统</li><li>基础运动</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>UI/HUD</li><li>AI系统</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>目标检测、锁定Camera Rig</td><td>锁定规则文档</td></tr><tr><td>美术</td><td>锁定标记UI</td><td>UX设计稿</td></tr></table></div>
-<div class="sm"><div class="sm-t">技能框架 <span class="tt t-m">Mixed</span></div>
-<div class="sm-d"><b>模块内容概述：</b>技能数据结构；技能生命周期；技能分类；技能升级；技能槽位；技能打断/排队逻辑。策划需输出标准化配置表。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 每角色/职业约多少技能（影响工具链投入）；② 技能可否在空中/水中/骑乘中释放；③ 技能是否有元素属性（联动物化反应）；④ 是否有连锁/组合技能。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>技能系统是内容量最大模块之一需完善编辑器；技能网络同步是战斗体验关键。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>属性计算</li><li>Buff系统</li><li>动画系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>远程抛体</li><li>近战判定</li><li>UI</li><li>音频</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>技能框架（Ability System）、技能编辑器</td><td>技能配置表模板；每个技能配置数据</td></tr><tr><td>美术</td><td>技能动画/特效/图标</td><td>技能资产清单</td></tr><tr><td>音频</td><td>技能音效</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">Buff/状态效果框架 <span class="tt t-m">Mixed</span></div>
-<div class="sm-d"><b>模块内容概述：</b>Buff数据结构；分类；叠加规则；互斥/覆盖；来源追踪；修改方式；清除/驱散。</div>
-<div class="dec"><b>📋 策划需决策：</b>① Buff最大叠加层数；② 控制类Buff免疫/递减机制（防Boss被无限控）；③ 是否有隐藏Buff。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>Buff是数值bug重灾区——建议建调试面板；Buff和属性交互需有明确计算顺序文档。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>角色属性系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>技能系统</li><li>物化反应</li><li>道具系统</li><li>UI/HUD</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>Buff管理器、Buff编辑器</td><td>Buff配置表模板；Buff总表</td></tr><tr><td>美术</td><td>Buff图标、附体特效</td><td>图标清单；特效需求表</td></tr><tr><td>音频</td><td>Buff音效</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">天赋/被动技能树 <span class="tt t-c">Content</span></div>
+<div class="sm-d"><b>模块内容概述：</b>顿帧(HitStop)；受击动画分类；霸体与硬直分级；屏幕震动/镜头拉近；粒子特效；伤害数字；手柄震动；材质闪白；屏幕效果；物理混合。</div>
+<div class="dec"><b>📋 策划需决策：</b>① HitStop是统一的还是按伤害等级分层；② 受击硬直分级（硬直/击退/击飞），其判定方式或对抗计算方法；③ 伤害数字是否区分暴击/元素等样式；④ 受击动画是否分攻击方向和打击部位。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 打击反馈是&#x27;手感&#x27;的核心——需大量迭代调优。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>属性系统</li><li>命中判定</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>Buff系统</li><li>相机系统</li><li>音频系统</li><li>UI/HUD</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>HitStop系统、受击状态机、可配置反馈预设</td><td>打击反馈配置表</td></tr><tr><td>美术</td><td>受击动画集、命中特效</td><td>特效/动作需求表</td></tr><tr><td>音频</td><td>打击音效、受伤语音</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">枪械系统 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>枪械参数（散射/后坐力/射速等）；准星机制；射击模式（腰射/机瞄/开镜）；弹道模拟；命中判定（单线/双线/实体子弹）；换弹机制；弹药系统；枪械改装；射击音效（多普勒/室内外差异）。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 第一人称还是第三人称；② 弹道模型——hitscan vs projectile vs 混合；③ 弹药是否分类型和容量管理；④ 枪械改装深度——仅外观 vs 影响属性；⑤ 是否有掩体射击（更复杂武器状态）。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① hitscan和projectile对网络同步要求完全不同；② 后坐力模型需反复调教；③ 枪械与传统武器走一套装备系统的装配流程。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>道具系统</li><li>装备系统</li><li>属性系统</li><li>打击反馈</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>相机系统</li><li>技能系统</li><li>Buff系统</li><li>UI/HUD</li><li>音频系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>射击机制、枪械系统、准星逻辑、弹药系统、附件系统、掩体机制</td><td>—</td></tr><tr><td>美术</td><td>枪械模型/动画、持枪动作、射击/弹道/命中特效</td><td>枪械设计表与资产清单、动作资产表、特效需求表</td></tr><tr><td>音频</td><td>射击/命中音效</td><td>音效需求表</td></tr><tr><td>UI</td><td>准星状态设计</td><td>准星HUD设计</td></tr></table></div>
+<div class="sm"><div class="sm-t">连招/变招 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>出招按键机制（timing差异敏感）；连招机制；派生机制；变招机制（反击）；招式取消；前后摇取消机制；出招表；缓存策略。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 连招复杂度——固定招式表 vs 自由连招 vs 简化连击；② 是否有武器切换/独立连招树。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 考虑网络同步对按键Timing影响；② 取消机制影响战斗深度。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>技能系统</li><li>输入系统</li><li>动画系统</li><li>打击反馈</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>Buff系统</li><li>技能系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>连招/派生/变招/取消机制</td><td>—</td></tr><tr><td>美术</td><td>Combo动作、Pair Animation（反击）</td><td>动作需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">防御手段 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>格挡机制；闪避机制；弹反判定；闪避无敌帧设计；盾牌/武器差异化。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 完美格挡/弹反窗口帧数；② 防御核心资源；③ 完美闪避/防御后的奖励机制；④ 防御等级（可防御的招式和不可防御的招式）。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 弹反窗口在不同帧率下体验不同需按时间定义；② 目押受网络同步的影响。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>命中判定</li><li>属性系统</li><li>技能系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>技能系统</li><li>Buff系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>防御状态逻辑、判定帧系统</td><td>—</td></tr><tr><td>美术</td><td>格挡/弹反动画、特效</td><td>动作/特效需求表</td></tr><tr><td>音频</td><td>格挡/弹反音效</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">锁定系统 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>软锁定机制；硬锁定机制；自动锁定机制；锁定触发方式；锁定镜头策略。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 游戏使用哪种锁定方式；② 是否支持多目标锁定；③ 是否影响镜头和移动方式。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 锁定需要明确的结束方式和调整，避免预期偏离；② 当影响镜头时需控制变化速率保证平滑。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>相机系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>技能系统</li><li>UI/HUD</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>锁定机制和参数配置、锁定目标切换规则</td><td>—</td></tr><tr><td>UI</td><td>目标锁定提示</td><td>UX设计稿</td></tr></table></div>
+<div class="sm"><div class="sm-t">天赋系统 <span class="tt t-c">Content</span></div>
 <div class="sm-d"><b>模块内容概述：</b>天赋树结构；天赋点获取与重置；天赋效果分类；多角色/职业差异化。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 天赋树形式——线性链 vs 分支树 vs 星座盘；② 天赋点可否洗点——免费 vs 付费；③ 天赋效果深度——仅数值 vs 改变技能形态。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>改变技能形态的天赋成本远高于纯数值天赋；天赋太深导致决策焦虑太浅缺乏乐趣。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>属性计算</li><li>技能系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>UI</li><li>存档系统</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>天赋树框架、编辑器</td><td>天赋树结构图；天赋列表</td></tr><tr><td>美术</td><td>天赋图标集</td><td>图标清单；UX设计稿</td></tr></table></div>
-<div class="sm"><div class="sm-t">机关/解谜 <span class="tt t-c">Content</span></div>
-<div class="sm-d"><b>模块内容概述：</b>机关类型（拉杆/踏板/旋转/时序/连锁等）；触发与状态切换；固定点交互；机关与物理/元素联动。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 机关驱动方式——纯脚本 vs 可视化蓝图 vs 专用编辑器；② 是否有多人协作解谜；③ 机关是否可重置/重复触发。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>机关编辑器易用性直接影响内容产出效率；多人协作机关的网络同步时序容易出错。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>交互系统</li><li>物理碰撞</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>物化反应</li><li>任务系统</li><li>相机系统</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>机关基类、关卡脚本系统/可视化编辑器</td><td>机关类型规范；编辑器需求</td></tr><tr><td>美术</td><td>机关模型/动画</td><td>美术资产清单</td></tr><tr><td>音频</td><td>机关运行声效</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">陷阱机制 <span class="tt t-c">Content</span></div>
-<div class="sm-d"><b>模块内容概述：</b>陷阱类型（地刺/火焰/电击/陷坑/绊线等）；触发方式；伤害与Buff附加；玩家可否放置。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 陷阱仅环境预置还是玩家可制作/放置；② 陷阱对友方是否生效；③ 陷阱可否被破坏/解除。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>玩家可放置陷阱极大增加PvP复杂度；陷阱对AI的感知和规避需AI系统配合。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 天赋树形式——线性链 vs 分支树 vs 星座盘；② 天赋点可否洗点——免费 vs 付费；③ 天赋效果深度——仅数值 vs 提供技能效果。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 改变技能形态的天赋成本远高于纯数值天赋；② 天赋太深导致决策焦虑太浅缺乏乐趣。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>属性系统</li><li>技能系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>技能系统</li><li>Buff系统</li><li>UI/HUD</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>天赋系统功能</td><td>—</td></tr><tr><td>美术</td><td>天赋图标</td><td>图标清单</td></tr><tr><td>UI</td><td>天赋系统交互界面</td><td>UX设计稿</td></tr><tr><td>策划</td><td>配置天赋效果（属性/技能）</td><td>天赋效果设计</td></tr></table></div>
+<div class="sm"><div class="sm-t">陷阱 <span class="tt t-c">Content</span></div>
+<div class="sm-d"><b>模块内容概述：</b>陷阱类型（地刺/火焰/电击/陷坑/绊线等）；触发方式；影响范围；陷阱效果；玩家放置机制。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 陷阱仅环境预置还是玩家可制作/放置；② 陷阱可否被破坏/解除。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 玩家可放置陷阱极大增加PvP复杂度；② 陷阱对AI的感知和规避需AI系统配合。</div>
 <div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>属性计算</li><li>Buff系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>物化反应</li><li>关卡系统</li><li>AI系统</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>陷阱框架、触发逻辑、编辑器</td><td>陷阱类型配置表</td></tr><tr><td>美术</td><td>陷阱模型/特效</td><td>美术资产清单</td></tr><tr><td>音频</td><td>触发音效</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">通用动态障碍/跑酷机关 <span class="tt t-c">Content</span></div>
-<div class="sm-d"><b>模块内容概述：</b>各类动态障碍：移动平台、旋转刀刃、定时火柱、摆锤、弹射板、传送带、消失平台等。参考《塞尔达》神庙和跑酷游戏设计。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 动态障碍是否有固定周期pattern（观察→记忆→通过）；② 是否与元素系统联动；③ 多人下障碍对每个玩家独立还是共享状态。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>动态障碍时序需精细调教；网络同步下位置需精确否则多人体验差；建议参考塞尔达物理机关哲学——给玩家创造性解法空间。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>机关/解谜系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>关卡设计</li><li>物化反应</li><li>多人系统</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>动态障碍组件库、Timeline编辑器</td><td>动态障碍类型清单</td></tr><tr><td>美术</td><td>障碍物模型/动画</td><td>障碍物资产清单</td></tr><tr><td>音频</td><td>障碍运行音效</td><td>音效需求表</td></tr></table></div></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>Buff系统</li><li>技能抛体</li><li>技能系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>陷阱框架、触发逻辑、编辑器</td><td>—</td></tr><tr><td>美术</td><td>陷阱模型/特效</td><td>美术资产清单</td></tr><tr><td>音频</td><td>触发音效</td><td>音效需求表</td></tr><tr><td>策划</td><td>配置各陷阱效果</td><td>陷阱设计清单</td></tr></table></div>
+<div class="sm"><div class="sm-t">机关 <span class="tt t-c">Content</span></div>
+<div class="sm-d"><b>模块内容概述：</b>各类动态障碍：移动平台、旋转刀刃、定时火柱、摆锤、弹射板、传送带、消失平台等；通常影响角色运动状态/属性，考验玩家运动组合和反应时机。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 动态障碍是否有固定周期pattern（观察→记忆→通过）；② 是否与物理系统联动；③ 配合角色运动能力考虑障碍类型。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 多人模式下陷阱的激活与停止策略明确；② 网络同步下位置需精确否则多人体验差。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理系统</li><li>运动能力</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>技能系统</li><li>Buff系统</li><li>交互系统</li><li>关卡设计</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>机关运动机制（性能优化、网络同步）</td><td>—</td></tr><tr><td>美术</td><td>机关模型</td><td>机关模型清单</td></tr><tr><td>音频</td><td>机关运行音效</td><td>音效需求表</td></tr><tr><td>策划</td><td>配置各机关效果</td><td>机关设计清单</td></tr></table></div></div>
 
 <div class="sec" id="sec-interact"><div class="sec-h">
 <div class="ic" style="background:rgba(52,211,153,.15)">🤝</div>
 <h2>03 · 交互系统</h2><span class="badge b-m">混合型</span></div>
-<p class="sec-intro">统一的交互检测与交互行为框架，以及各类交互行为实现（机关、采集、姿态、拾取、对话等）。同时定义交互物组件的标准分类。</p><div class="sm"><div class="sm-t">通用交互框架 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>交互检测方式（射线/范围/触发器）；交互类型分类（即时/长按/固定点/持续）；交互优先级；交互提示UI规范；交互物基类属性定义；网络同步需求。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 交互检测方式——面前扇形区域 vs 屏幕中心射线 vs 最近距离优先；② 多交互物重叠时的优先级策略（距离优先/类型优先/视角优先）；③ 固定点交互是否需要角色自动走位对齐（如拉杆、操作台）；④ 交互提示UI的统一规范（按键图标+文字描述的样式）。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>交互系统是几乎所有Gameplay的底层入口（拾取/对话/上车/开门/机关），接口设计需足够通用可扩展；多人模式下的交互占用/竞争需提前考虑（如宝箱只能一人开）；交互检测的性能开销在大量交互物场景中需要优化（空间哈希/八叉树）。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>UI框架</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>道具系统</li><li>对话系统</li><li>载具系统</li><li>任务系统</li><li>所有使用交互的模块</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>交互管理器、检测组件、交互基类、交互物编辑器标记工具</td><td>交互类型规范文档；交互优先级规则；交互提示UI规范</td></tr><tr><td>美术</td><td>交互提示UI素材</td><td>UX设计稿（交互提示样式）</td></tr></table></div>
-<div class="sm"><div class="sm-t">机关交互（开门/拉杆/开关等） <span class="tt t-c">Content</span></div>
-<div class="sm-d"><b>模块内容概述：</b>机关类交互的统一行为：开门（推/拉/旋转/滑动）、拉杆/按钮操作、阀门旋转、电梯召唤等；固定点交互设计（角色移动到固定位置执行固定动画）；机关状态切换（开/关/锁定/损坏）；机关联动逻辑（开关A控制门B）。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 机关交互是否需要角色播放特定动画（如双手推门）还是即时触发；② 机关是否有锁定状态（需要钥匙/解谜/条件满足才能操作）；③ 机关状态是否持久化（离开区域后是否重置）；④ 是否有可破坏的门/机关（与物理破坏系统联动）。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>机关交互的动画种类多（推门/拉杆/旋转/按压...），需要提前规划通用交互动画模板减少资产量；多人模式下机关状态同步需要确保一致性（A开了门，B也能看到门开了）。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>物理碰撞</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>关卡设计</li><li>物理破坏</li><li>任务系统</li><li>动画系统</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>机关交互组件、状态管理、联动逻辑系统</td><td>机关类型表（开门/拉杆/按钮等参数）；机关联动规则文档</td></tr><tr><td>美术</td><td>交互动画（推门/拉杆/按压等）、机关模型</td><td>交互动画需求表；机关资产清单</td></tr><tr><td>音频</td><td>开门声、拉杆声、机关运行声</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">姿态变化交互（坐/靠/躺） <span class="tt t-c">Content</span></div>
-<div class="sm-d"><b>模块内容概述：</b>角色在特定交互点执行姿态变化：坐下（椅子/地面/台阶）、靠（墙壁/栏杆）、躺（床/吊床/草地）；进入姿态的匹配逻辑（角色位置对齐、朝向调整）；姿态中的可执行操作（聊天/查看菜单/表情动作）；退出姿态的触发条件。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 姿态交互点是预设的（美术放置交互标记）还是智能检测的（自动检测可坐表面）；② 姿态中是否有特殊功能（如坐下后体力恢复加速、躺下后触发休息机制）；③ 多人模式下同一个座位是否有占用判定。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>姿态交互的IK匹配是技术难点——不同体型的角色坐同一把椅子需要适配；预设交互点方案工作量可控但灵活性低，智能检测方案灵活但开发成本高；建议优先做预设点方案。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>动画系统（IK）</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>角色系统</li><li>Buff系统（姿态带来的恢复效果）</li><li>多人系统</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>姿态交互组件、位置/朝向对齐逻辑、IK适配</td><td>姿态类型表（坐/靠/躺的参数）；姿态交互点放置规范</td></tr><tr><td>美术</td><td>各姿态动画（坐下/起身/靠墙/躺下等过渡动画+Idle循环）</td><td>动作资产需求表</td></tr><tr><td>音频</td><td>坐下/躺下的衣物摩擦声</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">采集交互（砍伐/采摘/挖矿/钓鱼） <span class="tt t-c">Content</span></div>
-<div class="sm-d"><b>模块内容概述：</b>各类资源采集行为：砍伐（树木/灌木）、采摘（草药/果实/花朵）、挖矿（矿石/宝石）、钓鱼（水边钓鱼迷你游戏）等；采集前置条件（是否需要工具如斧头/镐/鱼竿）；采集时间/进度；采集产出（与掉落系统关联）；采集资源的刷新机制。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 采集是否需要特定工具（增加装备管理维度但也增加门槛）；② 采集是简单播放动画+获取道具，还是有迷你游戏（如钓鱼的QTE/拉扯系统）；③ 采集资源的刷新机制——定时刷新 vs 离开区域刷新 vs 永不刷新；④ 采集是否可以被打断（被敌人攻击中断采集）。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>采集系统与经济平衡紧密相关——采集产出过多会导致资源贬值，过少会导致玩家枯燥刷采集；钓鱼类迷你游戏开发成本不低但玩家满意度通常很高——需评估ROI；采集点分布需和关卡组配合规划。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>道具/背包系统</li><li>掉落系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>经济系统</li><li>制作系统（采集物作为材料）</li><li>关卡设计（采集点分布）</li><li>UI（采集进度条）</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>采集交互组件、采集进度管理、资源刷新器、钓鱼迷你游戏（如有）</td><td>采集类型表（砍伐/采摘/挖矿/钓鱼的参数、时间、工具需求）；采集产出配置表</td></tr><tr><td>美术</td><td>各类采集动画（砍伐/采摘/挖矿/钓鱼）、资源物模型（树/矿/草药等不同状态）</td><td>采集动画需求表；资源物资产清单</td></tr><tr><td>音频</td><td>砍伐声、挖矿声、采摘声、钓鱼水声</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">拾取交互 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>场景中掉落物/道具的拾取行为：靠近自动拾取 vs 手动按键拾取；批量拾取/全部拾取；拾取动画（弯腰/吸附/直接入包）；拾取物的场景表现（光柱/高亮/浮动图标）；拾取过滤（自动忽略低品质物品）。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 拾取方式——纯自动拾取 vs 手动按键 vs 混合（低品质自动/高品质手动）；② 是否有拾取动画（有则更沉浸但节奏稍慢，无则效率高但缺少反馈）；③ 多人模式拾取归属——各自独立掉落 vs 谁先拾取归谁。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>拾取频率很高，交互响应必须即时——任何延迟都会被放大感知；自动拾取需要考虑背包满的处理逻辑；多人抢拾取是常见的社交冲突点。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>道具/背包系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>掉落系统</li><li>UI（拾取提示/拾取日志）</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>拾取交互组件、自动拾取逻辑、拾取过滤器</td><td>拾取规则文档（自动/手动/过滤条件）</td></tr><tr><td>美术</td><td>拾取动画（如有）、掉落物场景表现特效</td><td>特效需求表</td></tr><tr><td>音频</td><td>拾取音效（按品质分层）</td><td>音效需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">对话交互 <span class="tt t-c">Content</span></div>
-<div class="sm-d"><b>模块内容概述：</b>与NPC的对话触发与进入流程：对话触发范围检测、对话进入/退出的角色行为（转向NPC/停止移动/镜头切换）；对话中的交互操作（选项选择/跳过/加速文字显示）。注意：对话内容逻辑（分支/条件/文本）属于任务与对话系统，此处仅涉及对话的交互入口和表现层。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 对话触发是靠近自动触发还是需要按键；② 进入对话时是否锁定角色操作（不能移动/不能攻击）；③ 对话中是否有镜头切换（拉近NPC面部/双人对话机位切换）；④ 多人模式下一个人对话时其他人是否可见/可参与。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>对话交互的体验很大程度取决于镜头和角色表现——仅弹文字框和有对话演出的体验天差地别；对话锁定操作在开放世界中需要考虑被敌人攻击的情况（是否自动中断对话）。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>相机系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>对话系统（内容逻辑）</li><li>NPC AI</li><li>任务系统</li><li>UI（对话界面）</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>对话交互组件、对话镜头控制、角色朝向/位置对齐</td><td>对话交互规范文档（触发条件/镜头行为/操作限制）</td></tr><tr><td>美术</td><td>对话特写镜头预设、NPC对话Idle动画</td><td>动画需求表</td></tr></table></div>
-<div class="sm"><div class="sm-t">交互物组件分类标准 <span class="tt t-i">Infra</span></div>
-<div class="sm-d"><b>模块内容概述：</b>定义场景中所有可交互物体的组件分类标准，确保各系统对交互物的创建和管理有统一规范。分类包括：资源类（可采集的树/矿/草药等）、机关类（门/拉杆/开关/电梯等）、陷阱类（地刺/火焰/绊线等可触发伤害的交互物）、掉落物类（场景中的可拾取道具/装备/货币）、NPC对话组件（NPC身上挂载的对话触发器，含头顶标记逻辑如感叹号/问号）。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 交互物组件是否基于同一个基类扩展（统一接口便于管理）还是各自独立（灵活但维护成本高）；② NPC头顶标记系统的规则——感叹号（有新任务）、问号（可提交任务）、其他标记（商人/功能NPC等）如何定义；③ 交互物是否有统一的编辑器标记方式（让关卡设计师能快速放置和配置）。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>交互物组件分类是前期架构决策——分类越清晰后期扩展越方便，建议建立交互物组件注册表；NPC头顶标记逻辑需要和任务系统紧密联动（任务状态变化→标记变化）；建议为关卡设计师提供交互物快速放置和预览工具。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>物理碰撞</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>掉落系统</li><li>采集系统</li><li>机关交互</li><li>陷阱系统</li><li>NPC AI</li><li>任务系统</li><li>关卡设计工具</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>交互物基类组件、各分类组件（资源/机关/陷阱/掉落物/NPC对话）、组件注册表、编辑器快速放置工具</td><td>交互物组件分类规范文档；各类交互物的属性模板；NPC头顶标记规则文档</td></tr><tr><td>美术</td><td>各类交互物通用视觉标识（高亮/轮廓/图标）、NPC头顶标记图标（感叹号/问号/商人等）</td><td>交互物视觉规范；标记图标资产清单</td></tr></table></div></div>
+<p class="sec-intro">统一的交互检测与交互行为框架，以及各类交互行为实现。</p><div class="sm"><div class="sm-t">通用交互框架 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>交互检测筛选方式（射线/范围/触发器）；进入系统（自动位移/步态适配）；交互点机制（固定点/非固定点）；交互行为（可由交互物指定）；交互效果（场景事件/物品奖励/任务进度）；并发优先级；交互提示UI规范；交互物基类属性定义；交互物可交互状态管理；网络同步需求。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 交互检测方式——面前扇形区域 vs 屏幕中心射线 vs 最近距离优先；② 多交互物重叠时的优先级策略；③ 固定点交互是否需要角色自动走位对齐；④ 交互提示UI的统一规范（按键图标+文字描述样式/图标变化）。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 交互系统是几乎所有Gameplay的底层入口，接口设计需足够通用可扩展；② 多人模式下的交互占用/竞争需提前考虑；③ 交互检测的性能开销在大量交互物场景中需要优化。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>物理碰撞</li><li>按键系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>道具系统</li><li>对话系统</li><li>载具系统</li><li>任务系统</li><li>技能系统</li><li>关卡系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>交互物基类功能</td><td>—</td></tr><tr><td>美术</td><td>交互提示UI素材</td><td>—</td></tr><tr><td>UI</td><td>交互提示UI规范</td><td>UX设计稿（交互提示样式）</td></tr></table></div>
+<div class="sm"><div class="sm-t">开关类 <span class="tt t-c">Content</span></div>
+<div class="sm-d"><b>模块内容概述：</b>有&#x27;开关&#x27;状态的常规交互对象：开门（推/拉/旋转/滑动）、拉杆/按钮操作、阀门旋转、电梯召唤等；搬动物体（开/关/锁定/损坏）；通常需要联动关卡事件、剧情运镜。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 机关状态类型（开/关）或触发式，及其存盘；② 机关可交互前置条件（需要钥匙/解谜/条件满足）；③ 机关状态是否持久化（离开区域后是否重置）；④ 是否有可破坏的门/机关。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 机关交互动画种类多需提前规划通用交互动画模板减少资产量；② 多人模式下机关状态同步需确保一致性。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>关卡设计</li><li>物理破坏</li><li>任务系统</li><li>过场动画</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>状态管理、关卡事件、IK对位</td><td>—</td></tr><tr><td>美术</td><td>交互动画（推门/拉杆/按压等）、机关模型</td><td>交互动画需求表、开关类资产清单</td></tr><tr><td>音频</td><td>开门声、拉杆声、机关运行声</td><td>音效需求表</td></tr><tr><td>策划</td><td>配置开关类交互物</td><td>开关类交互物清单</td></tr></table></div>
+<div class="sm"><div class="sm-t">持续使用 <span class="tt t-c">Content</span></div>
+<div class="sm-d"><b>模块内容概述：</b>角色对场景物件的持续性使用：坐下（椅子）、靠（栏杆）、躺（床）。特点是固定交互位置，有特殊进入动画配合，有主动取消和被动结束方式，交互物有可同时交互数量特征；需适配体型高低调整高度。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 姿态交互点的AI通用性；② 是否有特殊功能（如坐下后体力恢复加速、躺下后触发休息机制），支持配置实现；③ 多人模式下将要被占用的标记。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 姿态交互的IK匹配是技术难点——不同体型的角色坐同一把椅子需要适配。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>动画系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>Buff系统</li><li>AI系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>姿态交互组件、位置/朝向对齐逻辑、IK适配</td><td>姿态类型表、姿态交互点放置规范</td></tr><tr><td>美术</td><td>各姿态动画（坐下/起身/靠墙/躺下等过渡动画+Idle循环）</td><td>动作资产需求表</td></tr><tr><td>音频</td><td>坐下/躺下的衣物摩擦声</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">采集 <span class="tt t-c">Content</span></div>
+<div class="sm-d"><b>模块内容概述：</b>各类资源采集行为：砍伐（树木/灌木）、采摘（草药/果实/花朵）、挖矿（矿石/宝石）、钓鱼（水边钓鱼迷你游戏）等；采集前置条件（是否需要工具）；采集时间/进度；采集产出（与掉落系统关联）；采集资源的刷新机制。有些采集物有固定交互点，有些则没有。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 采集是否需要特定工具；② 采集奖励是直接进背包还是掉落拾取；③ 采集中断后进度是否保存。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 采集完成后采集物的变化细节需评估ROI实现；② 采集点分布需和关卡组配合规划。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>背包系统</li><li>掉落系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>经济系统</li><li>制作系统</li><li>关卡设计</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>采集物奖励产出机制、采集物刷新机制</td><td>—</td></tr><tr><td>美术</td><td>各类采集动画、资源物模型（不同状态）、获取物掉落模型/图标、采集特效</td><td>采集动画需求表、模型资产清单、图标需求表、特效需求</td></tr><tr><td>音频</td><td>砍伐声、挖矿声</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">拾取 <span class="tt t-m">Mixed</span></div>
+<div class="sm-d"><b>模块内容概述：</b>拾取物品奖励；自动拾取&amp;手动拾取；UI拾取列表；拾取物→背包数据流程；不同物品拾取后流程。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 拾取方式——射线类、碰撞类（通常由第一或第三人称决定）；② 是否有拾取动画；③ 多人模式拾取归属。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 自动拾取需要考虑背包满的处理逻辑；② 多人模式下的复制防止。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>道具系统</li><li>背包系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>装备系统（自动装备触发）</li><li>UI（拾取提示/列表/日志）</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>拾取交互机制、背包满处理、不同物品拾取后流程</td><td>—</td></tr><tr><td>美术</td><td>拾取物特效</td><td>特效需求表</td></tr><tr><td>UI</td><td>拾取物信息图示</td><td>UX交互图</td></tr><tr><td>音频</td><td>拾取音效（根据物品材质分类）</td><td>音效需求表</td></tr></table></div>
+<div class="sm"><div class="sm-t">对话 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>与NPC的对话触发与进入流程：对话触发范围检测、对话进入/退出的角色行为（转向NPC/停止移动/镜头切换）。注意：对话内容逻辑（分支/条件/文本）和对话时的镜头变化、交互操作属于任务与对话系统，此处仅涉及对话的交互入口和表现层。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 对话触发是靠近自动触发还是需要按键；② 对话按键是否与其它按键重复，以及重复时的优先级设置；③ 对话时是否无敌。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 对话锁定操作在开放世界中需要考虑被敌人攻击的情况（是否自动中断对话）。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>通用交互框架</li><li>NPC系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>对话系统（内容逻辑）</li><li>UI/HUD（对话界面）</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>对话交互组件、对话镜头控制、角色朝向/位置对齐</td><td>—</td></tr><tr><td>美术</td><td>对话特写镜头预设、NPC对话Idle动画</td><td>—</td></tr></table></div></div>
 
 <div class="sec" id="sec-item"><div class="sec-h">
-<div class="ic" style="background:rgba(251,191,36,.15)">🎒</div>
-<h2>04 · 物品系统（道具/装备/制作/掉落）</h2><span class="badge b-c">内容拓展</span></div>
-<p class="sec-intro">管理所有可拥有物品、装备、制作配方，以及掉落产出配置。</p><div class="sm"><div class="sm-t">背包与道具管理 <span class="tt t-m">Mixed</span></div>
-<div class="sm-d"><b>模块内容概述：</b>道具数据结构；背包容量与分类；道具获取/消耗/丢弃；道具使用效果；稀有度体系。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 背包是否有容量上限（格子数/重量）；② 稀有度等级数量；③ 是否有自动拾取和过滤。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>背包UI是高频操作界面需做可用性测试；道具堆叠上限影响数据库存储设计。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>交互系统</li><li>属性系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>制作系统</li><li>任务系统</li><li>经济系统</li><li>UI</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>道具管理器、背包UI逻辑</td><td>道具配置表模板；道具总表</td></tr><tr><td>美术</td><td>道具图标、3D模型</td><td>道具资产清单</td></tr><tr><td>UI</td><td>背包界面</td><td>UX设计稿</td></tr></table></div>
-<div class="sm"><div class="sm-t">装备系统 <span class="tt t-c">Content</span></div>
-<div class="sm-d"><b>模块内容概述：</b>装备部位定义；属性加成；套装效果；强化/附魔/打孔；外观与数值分离（时装系统）。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 装备部位数量；② 是否有套装系统；③ 强化深度——简单升级 vs 附魔词条 vs 打孔宝石；④ 时装系统是否独立。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>强化深度越大数值膨胀越难控制；套装效果易导致&#x27;凑套装&#x27;成唯一最优解。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>背包管理</li><li>属性计算</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>战斗系统</li><li>制作系统</li><li>UI</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>装备槽、套装检测、强化系统</td><td>装备定义文档；属性配置表</td></tr><tr><td>美术</td><td>装备模型/贴图</td><td>装备资产清单</td></tr><tr><td>UI</td><td>装备界面/纸娃娃</td><td>UX设计稿</td></tr></table></div>
-<div class="sm"><div class="sm-t">制作/合成系统 <span class="tt t-c">Content</span></div>
+<div class="ic" style="background:rgba(52,211,153,.15)">🎒</div>
+<h2>04 · 物品系统</h2><span class="badge b-m">混合型</span></div>
+<p class="sec-intro">管理所有可拥有物品、装备、制作配方、掉落产出以及宝箱/道具生成。</p><div class="sm"><div class="sm-t">道具系统 <span class="tt t-m">Mixed</span></div>
+<div class="sm-d"><b>模块内容概述：</b>道具的分类；道具的数据结构；道具的实例化（拾取物）；道具的实例化过程（静态数据和动态数据写入）。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 是否所有道具使用统一数据结构（为控制无效数据量有时会将武器等分表）；② 道具实例化的可见性管理（自己丢弃vs怪物掉落的差异）；③ 模板化道具（可叠加）与实例化道具（具有特有变量如耐久度，不可叠加）的区分。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 道具的实例化和拾取过程容易产生复制情况需特别关注。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>交互系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>属性系统</li><li>Buff系统</li><li>技能系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>道具相关逻辑</td><td>—</td></tr><tr><td>美术</td><td>道具图标、3D模型</td><td>道具资产清单</td></tr><tr><td>策划</td><td>配置道具数据表格和对应掉落物</td><td>道具功能表</td></tr></table></div>
+<div class="sm"><div class="sm-t">背包系统 <span class="tt t-i">Infra</span></div>
+<div class="sm-d"><b>模块内容概述：</b>背包容量与分类（根据道具类型划分）；道具进入背包的过程；道具丢弃过程（主动/被动）；道具的背包内管理（挪动/合并叠加/拆分/丢弃/使用）；背包容量扩充；临时背包机制。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 背包是否有重量限制，超重惩罚（如只能走）；② 有多少不同类型的背包；③ 背包内道具是否有体积管理（占据不同格子，不同2D形状）；④ 是否存在仓库（储物箱）；⑤ 是否存在嵌套储物容器。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 需要控制背包容量降低同步压力；② 道具数据结构差异将强行拓展背包类型。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>道具系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>UI/HUD（背包页面）</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>背包相关逻辑</td><td>—</td></tr><tr><td>UI</td><td>背包界面</td><td>UX设计稿</td></tr></table></div>
+<div class="sm"><div class="sm-t">装备系统 <span class="tt t-m">Mixed</span></div>
+<div class="sm-d"><b>模块内容概述：</b>装备分类（武器/防具）；武器装配流程（招式变化/技能切换）；防具装配流程；装备属性机制；套装效果；强化/附魔/打孔；外观管理；快速切换机制。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 装备部位数量；② 是否有套装系统；③ 强化深度——简单升级 vs 附魔词条 vs 打孔宝石；④ 哪些装备会影响姿态（投掷/工具/武器）并建立管理机制。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 确保装备切换时的属性添加和回滚正常；② 死亡复活流程中对装备效果和生效流程的管理（存盘或重新触发全流程）。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>道具系统</li><li>属性系统</li><li>动画系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>Buff系统</li><li>技能系统</li><li>枪械系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>装备槽、套装检测、附加系统（强化/附魔）</td><td>—</td></tr><tr><td>美术</td><td>装备模型</td><td>装备资产清单</td></tr><tr><td>UI</td><td>装备界面</td><td>UX设计稿</td></tr><tr><td>策划</td><td>武器Equippable对象（外观/武器蓝图）</td><td>—</td></tr></table></div>
+<div class="sm"><div class="sm-t">制作/合成 <span class="tt t-c">Content</span></div>
 <div class="sm-d"><b>模块内容概述：</b>配方数据结构；配方解锁条件；制作台/工作站概念；制作时间与批量。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 制作是否需要特定地点还是随时随地；② 是否有制作失败/随机品质；③ 配方是否需解锁。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>制作与掉落、经济系统构成&#x27;资源循环&#x27;——三者需联合设计。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>道具/背包系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>装备系统</li><li>任务系统</li><li>UI</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>制作管理器、配方编辑器</td><td>配方配置表模板</td></tr><tr><td>美术</td><td>制作台模型/特效</td><td>美术资产清单</td></tr><tr><td>UI</td><td>制作界面</td><td>UX设计稿</td></tr></table></div>
-<div class="sm"><div class="sm-t">掉落系统 <span class="tt t-c">Content</span></div>
-<div class="sm-d"><b>模块内容概述：</b>掉落来源分类（怪物/宝箱/任务/采集/拆解等）；掉落表配置结构（掉落池→概率→数量→保底）；品质权重；掉落特效。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 是否有保底机制（N次不出紫则必出）；② 多人掉落归属——各自独立 vs 共享roll点；③ 是否区分世界掉落和Boss专属掉落；④ 掉落物可见性（仅自己 vs 全体可见）。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>掉落概率直接影响经济和留存需数值策划深度参与；保底需持久化计数器；多人掉落归属对社交氛围影响大。</div>
-<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>道具/背包系统</li><li>属性系统</li></ul></div>
-<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>AI系统（怪物配置）</li><li>关卡系统（宝箱）</li><li>任务系统</li><li>经济系统</li></ul></div></div>
-<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>掉落管理器、掉落表编辑器、保底计数器</td><td>掉落表配置模板</td></tr><tr><td>美术</td><td>掉落光柱/品质颜色特效</td><td>特效需求表</td></tr><tr><td>音频</td><td>掉落/拾取音效</td><td>音效需求表</td></tr></table></div></div>
+<div class="dec"><b>📋 策划需决策：</b>① 制作是否需要特定地点还是随时随地；② 是否有制作失败/随机品质；③ 配方是否需解锁；④ 背包内合成还是背包外，以及掉线存储。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 制作与掉落、经济系统构成&#x27;资源循环&#x27;——三者需联合设计。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>道具系统</li><li>背包系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>货币系统</li><li>装备系统（穿戴时合成）</li><li>UI/HUD</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>制作管理器、配方编辑器</td><td>—</td></tr><tr><td>美术</td><td>制作台模型/特效</td><td>美术资产清单</td></tr><tr><td>UI</td><td>制作界面</td><td>UX设计稿</td></tr><tr><td>策划</td><td>合成配方配置</td><td>—</td></tr></table></div>
+<div class="sm"><div class="sm-t">掉落系统 <span class="tt t-m">Mixed</span></div>
+<div class="sm-d"><b>模块内容概述：</b>掉落表配置结构（掉落池→概率→数量→保底）；掉落的接入（打怪/任务奖励/活动奖励/宝箱产出）。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 是否有保底机制；② 多人掉落归属——各自独立 vs 共享roll点；③ 是否区分世界掉落和Boss专属掉落；④ 掉落物可见性。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 掉落概率直接影响经济和留存需数值策划深度参与；② 保底需持久化计数器；③ 多人掉落归属对社交氛围影响大。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>道具系统</li><li>货币系统</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>AI系统（怪物配置）</li><li>宝箱（产出配置）</li><li>任务系统（任务奖励）</li><li>经济系统（活动奖励/礼包）</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>掉落机制与配置方式</td><td>—</td></tr><tr><td>策划</td><td>配置掉落（专职数值策划）</td><td>产出规划</td></tr></table></div>
+<div class="sm"><div class="sm-t">宝箱/道具生成 <span class="tt t-c">Content</span></div>
+<div class="sm-d"><b>模块内容概述：</b>宝箱是关卡内产出道具的一种可交互物：交互检测、开启条件、开启交互、并发处理。道具生成装置常用于PVP地图，可刷新武器/防御/消耗品；可指定初始刷新延迟、重新刷新CD、可刷新内容（掉落系统）。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 宝箱开启是否有花费；② 宝箱稀有度和产出的关联。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>① 长按读条开宝箱在多人模式下要做独占处理和提示；② 花钱开宝箱要防止吞钱不产出问题（多人并发开启情况）。</div>
+<div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>掉落系统</li><li>通用交互框架</li></ul></div>
+<div class="db"><div class="lb r">🔄 关联模块</div><ul><li>关卡系统</li></ul></div></div>
+<table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>宝箱机制、道具生成机制</td><td>—</td></tr><tr><td>美术</td><td>宝箱外形、生成器底座、交互提示图标</td><td>资产需求表、图标需求</td></tr><tr><td>策划</td><td>配置宝箱与生成</td><td>—</td></tr></table></div></div>
 
 <div class="sec" id="sec-ai"><div class="sec-h">
 <div class="ic" style="background:rgba(251,191,36,.15)">🤖</div>
@@ -295,8 +323,8 @@
 <table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>阵营管理器、关系矩阵、声望系统</td><td>阵营定义表；关系矩阵；声望规则文档</td></tr></table></div>
 <div class="sm"><div class="sm-t">同伴系统 <span class="tt t-c">Content</span></div>
 <div class="sm-d"><b>模块内容概述：</b>同伴招募方式；跟随行为；战斗指令（攻击/防御/待命/自由）；交互成长（好感度/对话/能力解锁）；同伴装备/技能。</div>
-<div class="dec"><b>📋 策划需决策：</b>① 同时可带几个同伴（影响战斗平衡和性能）；② 同伴可否死亡/永久损失；③ 战斗AI自由度——完全自主 vs 听从指令 vs 混合；④ 多人模式下同伴是否存在。</div>
-<div class="nt"><b>⚠️ 注意点与边界：</b>同伴AI最容易被吐槽——需大量调教；路径追随在复杂地形（室内/楼梯/攀爬）易卡住。</div>
+<div class="dec"><b>📋 策划需决策：</b>① 同时可带几个同伴；② 同伴可否死亡/永久损失；③ 战斗AI自由度；④ 多人模式下同伴是否存在。</div>
+<div class="nt"><b>⚠️ 注意点与边界：</b>同伴AI最容易被吐槽——需大量调教；路径追随在复杂地形易卡住。</div>
 <div class="dg"><div class="db"><div class="lb p">🔗 前置依赖</div><ul><li>AI基础框架</li><li>战斗系统</li><li>对话系统</li></ul></div>
 <div class="db"><div class="lb r">🔄 关联模块</div><ul><li>属性系统</li><li>装备系统</li><li>UI</li></ul></div></div>
 <table class="ot"><tr><th>下游</th><th>需交付内容</th><th>策划需提供的输入物</th></tr><tr><td>程序</td><td>同伴管理器、跟随AI、战斗指令系统</td><td>同伴列表；招募条件表</td></tr><tr><td>美术</td><td>同伴模型/动画</td><td>同伴设计清单</td></tr><tr><td>音频</td><td>同伴语音</td><td>语音脚本清单</td></tr></table></div>
